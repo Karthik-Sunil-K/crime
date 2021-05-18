@@ -13,10 +13,10 @@ body{
 }
 
 
-.scene{
+/* .scene{
     height: 350px;
     
-}
+} */
 #heading{
     color:rgb(241, 8, 66);
 }
@@ -32,6 +32,22 @@ body{
     height: 100%;
     width: 100%;
     border:2px solid rgb(241, 8, 66);
+    display:block;
+}
+
+#scene-script{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    color:rgb(241, 8, 66);
+    background-color:#121212;
+    padding:10px;
+    border:2px solid rgb(241, 8, 66);
+    opacity:0.9;
+    border-radius:10px;
+    font-weight:700;
+    
 }
 .scene .btn{
    background-color:#121212;

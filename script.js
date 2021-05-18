@@ -284,6 +284,9 @@ function display() {
         left.innerHTML = dialogue[count][0].toLowerCase();
         right.innerHTML = dialogue[count][1].toLowerCase();
         scene = document.getElementById('scene').src;
+        document.getElementById('count').innerHTML = count;
+        var content = document.getElementById('scene-script');
+        var char2 = document.getElementById('char-2-name');
     
   
 
@@ -291,12 +294,12 @@ function display() {
       
         document.getElementById('prev').style.display = 'none';
     }else if(count == 29 || count == 32){
-        alert(`${count}`)
+        
         count = 39;
         document.getElementById('prev').style.display = 'inline-block';
 
     }else if(count == 36){
-        alert(`${count}`)
+       
         count = 41;
         document.getElementById('prev').style.display = 'inline-block';
     }
@@ -305,9 +308,6 @@ function display() {
     }
 
 
-    if(count == 25){
-        alert(`count is ${count}`)
-    }
      if (count >= 23) {
     // alert(`count ${count}`)
 
@@ -331,16 +331,56 @@ function display() {
     }
     else if (count >= 9) {
         document.getElementById('right-char').src = 'img/char1.jpg';
+        char2.innerHTML = `CECIL`;
+        content.style.display = 'none';
     }
     else if (count >= 8) {
-        document.getElementById('right-char').src = 'img/reed.jpg'
-    }
-    else if (count >= 4) {
-        document.getElementById('scene').src = 'img/hover1.png';
+        document.getElementById('right-char').src = 'img/reed.jpg';
+        content.innerHTML = `Agent Reed hands over the non involved weapon to Ernest and then he
+        smells the blood.`;
+        char2.innerHTML = `REED`;
+
+
+    }else if(count == 7){
+        content.innerHTML = `find the weapon from the fig?`;
+        content.style.display  = 'block';
+        char2.innerHTML = `CECIL`;
         document.getElementById('right-char').src = 'img/char1.jpg';
+
+
+    }
+   
+    else if (count >= 4) {
+        document.getElementById('scene').src = 'img/murder-spot.png';
+        document.getElementById('right-char').src = 'img/char1.jpg';
+        if(count == 4){
+            content.innerHTML = `Two bodies are found lying face down in the abandoned garage space near the
+            security guard room. The victims’ head and the area below the nose have been
+            deeply crushed. Three weapons with blood stains on it were found near the
+            bodies. The garbage bin has been turned over and has caused the waste items
+            to litter around.`;
+            content.style.display = 'block';
+        }else{
+            // content.style.visibility = 'hidden';
+
+            content.style.display = 'none';
+        }
 
     } else if (count >= 2) {
         document.getElementById('scene').src = 'img/backyard.jpg';
+        char2.innerHTML = `CECIL`;
+
+        if(count == 2){
+            content.innerHTML = `Their attention is drawn to the barbed wire fencing with a
+            gaping hole, wide enough for a man to pass through.`
+            // content.style.visibility = `visible`;
+            content.style.display = 'block';
+
+        }else{
+            // content.style.visibility = 'hidden';
+            content.style.display = 'none';
+
+        }
     }
     else {
         document.getElementById('scene').src = 'img/asylum.jpg';
