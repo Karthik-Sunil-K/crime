@@ -116,7 +116,7 @@ var dialogue = [
     [`REED ... TAKE MAX DOWNSTAIRS!`, `SURE. AFTER YOU, SIR.`],
     [``,``],
 
-    // 38 david as suspect dialogue 1 ernst dialogue 2 cecil
+    // 39 david as suspect dialogue 1 ernst dialogue 2 cecil
     [`YOU MADE A TOUGH CALL. IT’S TRUE THAT HE WAS NEAR TO THE
     SPOT.`, `I THINK IT’S DAVID`],
     [`BUT THAT DOESN’T PROVE THAT HE’S THE CULPRIT.
@@ -290,11 +290,15 @@ function display() {
     if(count == 27 || count == 30 || count == 33 || count == 38 || count == 40 ){
       
         document.getElementById('prev').style.display = 'none';
-    }else if(count == 29 || count == 32 || count == 37){
+    }else if(count == 29 || count == 32){
         alert(`${count}`)
         count = 39;
         document.getElementById('prev').style.display = 'inline-block';
 
+    }else if(count == 36){
+        alert(`${count}`)
+        count = 41;
+        document.getElementById('prev').style.display = 'inline-block';
     }
     else{
         document.getElementById('prev').style.display = 'inline-block';
