@@ -159,15 +159,66 @@ var dialogue = [
 ];
 var left = document.getElementById('left-dialogue');
 var right = document.getElementById('right-dialogue');
-var sceneOuter = document.getElementById('scene-outer');
+var content = document.getElementById('scene-script');
+
+var content = document.getElementById('scene-script');
 var count = -1;
 
 
 function display() {
   
 
-    if (count == 26) {
-        sceneOuter.innerHTML = `
+        left.innerHTML = dialogue[count][0].toLowerCase();
+        right.innerHTML = dialogue[count][1].toLowerCase();
+        scene = document.getElementById('scene').src;
+        document.getElementById('count').innerHTML = count;
+        var char2 = document.getElementById('char-2-name');
+    
+    
+  
+
+    // if(count == 27 || count == 30 || count == 33 || count == 38 || count == 40 ){
+      
+    //     document.getElementById('prev').style.display = 'none';
+    // }else if(count == 29 || count == 32){
+        
+    //     count = 39;
+    //     document.getElementById('prev').style.display = 'inline-block';
+
+    // }else if(count == 36){
+       
+    //     count = 41;
+    //     document.getElementById('prev').style.display = 'inline-block';
+    // }
+    // else{
+    //     document.getElementById('prev').style.display = 'inline-block';
+    // }
+if(count >= 38){
+    document.getElementById('prev').style.display = 'inline-block';
+    document.getElementById('prev').disabled = false;
+
+
+}
+else if(count >= 33){
+
+    document.getElementById('prev').style.display = 'inline-block';
+    document.getElementById('prev').disabled = false;
+
+    if(count == 37){
+    document.getElementById('prev').style.display = 'none';
+
+    }
+
+
+}else if(count > 26){
+    document.getElementById('prev').style.display = 'none';
+
+}
+    else if (count == 26) {
+        content.style.display = 'block';
+        document.getElementById('next').style.display = 'none';
+
+        content.innerHTML = `
         <div class = 'row mx-auto'>
         <div class = 'col-12 mx-auto'>
 
@@ -186,6 +237,7 @@ function display() {
 
 
         </div>
+
         </div>`
 
 
@@ -193,17 +245,20 @@ function display() {
         var davidDialogue = document.getElementById('david');
         var madDialogue = document.getElementById('maddison');
         var rubDialogue = document.getElementById('rubben');
+        var sceneOuter = document.getElementById('scene-outer');
         maxDialogue.addEventListener("click", function () {
 
 
 
-            sceneOuter.innerHTML = `
+           sceneOuter.innerHTML = `
     
     <img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">
+    <div id="scene-script" class = 'text-transform mx-auto'>hello this is nyc</div>
+
     <div class="row mx-auto">
       <div class="col-12 mx-auto mt-4 pt-2 text-center">
-          <button class='btn' id = 'prev' onclick="bwd()"><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev</button>
-          <button class='btn' onclick="fwd()">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+          <button class='btn'id = 'prev' onclick="bwd()" disabled><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev</button>
+          <button class='btn' onclick="fwd()">Next <i class="fa fa-arrow-right"  aria-hidden="true"></i></button>
     
     
       </div>
@@ -218,12 +273,14 @@ function display() {
 
 
 
-            sceneOuter.innerHTML = `
+           sceneOuter.innerHTML = `
         
         <img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">
+        <div id="scene-script" class = 'text-transform mx-auto'>hello this is nyc</div>
+
         <div class="row mx-auto">
           <div class="col-12 mx-auto mt-4 pt-2 text-center">
-              <button class='btn'id = 'prev' onclick="bwd()"><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev</button>
+          <button class='btn'id = 'prev' onclick="bwd()" disabled><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev</button>
               <button class='btn' onclick="fwd()">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
         
         
@@ -240,9 +297,11 @@ function display() {
 
 
 
-            sceneOuter.innerHTML = `
+           sceneOuter.innerHTML = `
             
             <img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">
+        <div id="scene-script" class = 'text-transform mx-auto'>hello this is nyc</div>
+
             <div class="row mx-auto">
               <div class="col-12 mx-auto mt-4 pt-2 text-center">
                   <button class='btn'id = 'prev' onclick="bwd()"><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev</button>
@@ -262,9 +321,11 @@ function display() {
 
 
 
-            sceneOuter.innerHTML = `
+           sceneOuter.innerHTML = `
                 
                 <img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">
+        <div id="scene-script" class = 'text-transform mx-auto'>hello this is nyc</div>
+
                 <div class="row mx-auto">
                   <div class="col-12 mx-auto mt-4 pt-2 text-center">
                       <button class='btn'id = 'prev' onclick="bwd()"><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev</button>
@@ -280,54 +341,59 @@ function display() {
         })
 
     }
+    if(count == 25){
+        document.getElementById('right-char').src = 'img/david.jpg';
+        char2.innerHTML = `DAVID`;   
+        document.getElementById('next').style.display = 'inline-block';
+        content.style.display = 'none';
 
-        left.innerHTML = dialogue[count][0].toLowerCase();
-        right.innerHTML = dialogue[count][1].toLowerCase();
-        scene = document.getElementById('scene').src;
-        document.getElementById('count').innerHTML = count;
-        var content = document.getElementById('scene-script');
-        var char2 = document.getElementById('char-2-name');
-    
-  
-
-    if(count == 27 || count == 30 || count == 33 || count == 38 || count == 40 ){
-      
-        document.getElementById('prev').style.display = 'none';
-    }else if(count == 29 || count == 32){
-        
-        count = 39;
-        document.getElementById('prev').style.display = 'inline-block';
-
-    }else if(count == 36){
-       
-        count = 41;
-        document.getElementById('prev').style.display = 'inline-block';
     }
-    else{
-        document.getElementById('prev').style.display = 'inline-block';
-    }
-
-
-     if (count >= 23) {
+    else if (count >= 23) {
     // alert(`count ${count}`)
 
         document.getElementById('right-char').src = 'img/david.jpg';
-        document.getElementById('scene').src = 'img/david-staff.jpg';
+        char2.innerHTML = `DAVID`;
+       
+
     }
     else if (count >= 18) {
         document.getElementById('right-char').src = 'img/max.jpg';
-        document.getElementById('scene').src = 'img/max-staff.jpg';
+        char2.innerHTML = `MAX`;
+
     }
     else if (count >= 16) {
         document.getElementById('right-char').src = 'img/maddison.jpg';
-        document.getElementById('scene').src = 'img/maddison-staff.jpg';
+        char2.innerHTML = `MADDISON`;
+
+        
     }
     else if (count >= 14) {
         document.getElementById('right-char').src = 'img/rube.jpg';
-        document.getElementById('scene').src = 'img/rube-staff.jpg';
+        document.getElementById('scene').src = 'img/staffroom.jpg';
+        content.style.display = 'none';
+            char2.innerHTML = `RUBEN`;
+        document.getElementById('right-char').src = 'img/rube.jpg';
+
+    
+
     }
     else if (count >= 12) {
         document.getElementById('right-char').src = 'img/reed.jpg';
+        char2.innerHTML = `REED`;
+        content.style.display = 'none';
+        if(count == 13){
+            content.innerHTML = `All the staff members who were in the Asylum during the murder is
+            summoned at staffroom.`;
+            content.style.display = 'block';
+        char2.innerHTML = `REED`;
+        document.getElementById('right-char').src = 'img/reed.jpg';
+        document.getElementById('scene').src = 'img/murder-spot.png';
+
+
+
+        }
+
+
     }
     else if (count >= 9) {
         document.getElementById('right-char').src = 'img/char1.jpg';
