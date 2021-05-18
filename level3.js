@@ -215,7 +215,7 @@ footage from Maddison.`;
     document.getElementById(
       "scene-script"
     ).innerHTML = `Reed and Cecil hunt for Jackson. After some time they find a guy who knows Jackson.`;
-    document.getElementById("scene").src = "img/oldmanscene.gif";
+    document.getElementById("scene").src = "img/street.jpg";
     document.getElementById("left-char").src = "./img/reed.jpg";
     document.getElementById("left-caption").innerHTML = "AGENT REED";
     document.getElementById("right-char").src = "img/oldman.jpg";
@@ -250,19 +250,17 @@ caught sight of some sticky notes and old newspaper cuttings in the tent
     document.getElementById("right-char").src = "img/cecil.jpg";
     document.getElementById("right-caption").innerHTML = "CECIL";
   }
-  else if (count == 20) {
-  document.getElementById("scene-script").style.opacity = 1;
-
-    document.getElementById(
-      "scene-script"
-    ).innerHTMl = `( the old man hands the agent reed a sheet of paper )`;
-  }
   else if (count == 19) {
+    document.getElementById("scene").src = "./img/street.jpg";
     document.getElementById("left-char").src = "./img/oldman.jpg";
     document.getElementById("left-caption").innerHTML = "OLDMAN";
     document.getElementById("right-char").src = "img/reed.jpg";
     document.getElementById("right-caption").innerHTML = "REED";
+  } else if (count == 20) {
+    document.getElementById("scene").src = "./img/scribblle.gif";
+
   } else if (count == 21) {
+    document.getElementById("scene").src = "img/street.jpg";
     document.getElementById("left-char").src = "./img/oldman.jpg";
     document.getElementById("left-caption").innerHTML = "OLDMAN";
     document.getElementById("right-char").src = "img/cecil.jpg";
@@ -273,7 +271,7 @@ caught sight of some sticky notes and old newspaper cuttings in the tent
     document.getElementById("right-char").src = "img/cecil.jpg";
     document.getElementById("right-caption").innerHTML = "CECIL";
   } else if (count == 23) {
-  document.getElementById("scene-script").style.opacity = 1;
+    document.getElementById("scene-script").style.opacity = 1;
 
     document.getElementById(
       "scene-script"
@@ -287,9 +285,8 @@ caught sight of some sticky notes and old newspaper cuttings in the tent
     document.getElementById("left-caption").innerHTML = "AGENT REED";
     document.getElementById("right-char").src = "img/cecil.jpg";
     document.getElementById("right-caption").innerHTML = "CECIL";
-  }
-  else if (count == 25) {
-  document.getElementById("scene-script").style.opacity = 1;
+  } else if (count == 25) {
+    document.getElementById("scene-script").style.opacity = 1;
 
     document.getElementById(
       "scene-script"
