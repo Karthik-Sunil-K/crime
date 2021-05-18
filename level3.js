@@ -245,12 +245,6 @@ caught sight of some sticky notes and old newspaper cuttings in the tent
     document.getElementById('scene-script').innerHTML = `Reed gets a can of water and pour it on the head of the old guy.`
   }
   else if (count == 16) {
-  document.getElementById("scene-script").style.opacity = 1;
-
-    document.getElementById(
-      "scene-script"
-    ).innerHTML = `(Reed shows him his card.)`;
-
     document.getElementById("left-char").src = "./img/oldman.jpg";
     document.getElementById("left-caption").innerHTML = "OLDMAN";
     document.getElementById("right-char").src = "img/cecil.jpg";
