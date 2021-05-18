@@ -28,7 +28,7 @@ var dialogue = [
     SOMEWHERE NOT VISIBLE TO ANY EASY GLANCE. JUST CHECK ALL
     THOSE BOXES`],
     //ernest contd#13
-    ['', 'A XXXXX CHIP… AM I OUT OF MIND? LET ME TELL YOU WHAT HAPPENED OVER HERE'],
+    ['', 'A 19Hz CHIP… AM I OUT OF MIND? LET ME TELL YOU WHAT HAPPENED OVER HERE'],
     ['', 'LAST NIGHT, AFTER THE FIRE ALARM WAS TRIGGERED BY MAX THE THIRD PATIENT LET OTHERS FREE. AT THIS TIME OUR BAD BOY CAME THROUGH THE BACKYARD . HE CUT THE FENCE IN AN IRREGULAR WAY '],
     ['', ' IT STILL NEEDS TO BE CONNECTED . AFTER THAT MAX BRINGS THOSE PATIENTS OVER HERE . EITHER MAX OR HIS BOSS CONTROLLED THIS CHIP THAT WAS ALREADY INSIDE THEIR DAMN HEAD .'],
     ['', ' THIS CHIP EMITS HIGH FREQUENCY WAVES SINCE IT WAS CONNECTED TO THE 8TH CRANIAL NERVE WHICH LEADS TO PHYSICAL INSTABILITY . AND LATER MAYBE IT TRIGGERED THEM SOMEHOW'],
@@ -192,6 +192,11 @@ function display() {
         document.getElementById('right-char').src = 'img/ernest.jpg'
         document.getElementById('left-char-name').innerHTML = 'CECIL'
         document.getElementById('right-char-name').innerHTML = 'ERNEST'
+        document.getElementById(
+            "scene-script"
+          ).innerHTML = `After he finished his painting he unknowingly glanced up at the CCTV. Both his eyes were a white.`;
+        
+         
     }
 
     else if (count >=26) {
@@ -200,6 +205,10 @@ function display() {
         document.getElementById('right-char').src = 'img/ernest.jpg'
         document.getElementById('left-char-name').innerHTML = 'MADDISON'
         document.getElementById('right-char-name').innerHTML = 'ERNEST'
+        document.getElementById(
+            "scene-script"
+          ).innerHTML = `Maddison starts to play the footage. A lad enters the asylum through the cut-open fence. He places his foot over one of the foot marks left by the murderer. For a moment it seemed that his walk was unfocused. Then he walks over to the wall of the meditation centre and stares up at it. He takes spray paint from his backpack and paints something on the wall. It was an inverted peace symbol!`;
+         
     }
 
 
@@ -216,36 +225,29 @@ function display() {
         document.getElementById('right-char').src = 'img/ernest.jpg'
         document.getElementById('left-char-name').innerHTML = 'MADDISON'
     }
-    else if (count == 10) {
-        document.getElementById(
-          "scene-script"
-        ).innerHTML = `Reed gets a call over his phone. After the call.`;
-       }
     else if (count >= 8) {
         
         document.getElementById('left-char').src = 'img/cecil.jpg'
         document.getElementById('right-char').src = 'img/ernest.jpg'
         document.getElementById('left-char-name').innerHTML = 'CECIL'
     }
+    else if (count === 2) {
+        document.getElementById(
+          "scene-script"
+        ).innerHTML = `After the preliminary examination of the bodies, they were sent to Dr.Jim for autopsy.
+        After some time, Jim comes out of the examination room to share the result with Ernest.`;
+       }
+    else if (count === 1) {
+        document.getElementById(
+          "scene-script"
+        ).innerHTML = `Dr. Jim’s private autopsy centre . Dr.Jim served in the army for British air force and after his retirement he tied up with private and public agencies for autopsy related consultations.`;
+       }
     else if (count >= 0) {
         
         document.getElementById('left-char').src = 'img/doctor.jpg'
         document.getElementById('right-char').src = 'img/ernest.jpg'
+        document.getElementById('scene').src = 'img/asylum.jpg';
     }
-    // else if (count >= 16) {
-    //     document.getElementById('right-char').src = 'img/maddison.jpg';
-    //     document.getElementById('scene').src = 'img/maddison-staff.jpg';
-    // }
-    // else if (count >= 14) {
-    //     document.getElementById('right-char').src = 'img/rube.jpg';
-    //     document.getElementById('scene').src = 'img/rube-staff.jpg';
-    // }
-    // else if (count >= 12) {
-    //     document.getElementById('right-char').src = 'img/reed.jpg';
-    // }
-    // else if (count >= 9) {
-    //     document.getElementById('right-char').src = 'img/char1.jpg';
-    // }
     else {
         document.getElementById('scene').src = 'img/asylum.jpg';
         // document.getElementById('right-char').src = 'img/char1.jpg';
@@ -272,9 +274,7 @@ function bwd() {
     display();
 
 }
-if (count >= 2) {
-    document.getElementById('left-char-photo').src = 'img/reed.jpg';
-}
+
 
 
 
