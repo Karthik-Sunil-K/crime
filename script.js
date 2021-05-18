@@ -193,7 +193,13 @@ function display() {
     // else{
     //     document.getElementById('prev').style.display = 'inline-block';
     // }
-if(count >= 38){
+    if(count == 40){
+        
+
+    document.getElementById('prev').disabled = true;
+
+    }
+else if(count >= 38){
     document.getElementById('prev').style.display = 'inline-block';
     document.getElementById('prev').disabled = false;
 
@@ -204,14 +210,36 @@ else if(count >= 33){
     document.getElementById('prev').style.display = 'inline-block';
     document.getElementById('prev').disabled = false;
 
+    if(count == 36){
+
+        count = 39;
+
+    }
+
     if(count == 37){
     document.getElementById('prev').style.display = 'none';
 
     }
 
 
-}else if(count > 26){
+}
+else if(count > 26){
     document.getElementById('prev').style.display = 'none';
+    if(count == 28){
+        document.getElementById('prev').style.display = 'inline-block';
+        document.getElementById('prev').disabled = true;
+        count = 39;
+    }
+    else if(count >= 30 && count <32 ){
+
+    document.getElementById('prev').style.display = 'inline-block';
+    document.getElementById('prev').disabled = false;
+
+    if(count == 31){
+        count = 39;
+    }
+
+    }
 
 }
     else if (count == 26) {
@@ -304,7 +332,8 @@ else if(count >= 33){
 
             <div class="row mx-auto">
               <div class="col-12 mx-auto mt-4 pt-2 text-center">
-                  <button class='btn'id = 'prev' onclick="bwd()"><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev</button>
+          <button class='btn'id = 'prev' onclick="bwd()" disabled><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev</button>
+                  
                   <button class='btn' onclick="fwd()">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
             
             
