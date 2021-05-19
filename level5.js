@@ -220,9 +220,10 @@ function display() {
  //   }
 
 //}
-    if (count == 27) {
+    if (count == 28) {
        // content.style.display = 'block';
         document.getElementById('next').style.display = 'none';
+        
 
         content.innerHTML = `
         <div class = 'row mx-auto'>
@@ -274,23 +275,34 @@ function display() {
         })
 
     }
+    else if (count >= 27) {
+        document.getElementById('scene').src = 'img/eastview.jpg';
+        if(count == 27){
+            content.innerHTML = ` ERNEST  AND CECIL  LEAVE THE PLACE. THEY  THINK  ABOUT 
+            THE RECENT EVENTS  AND RECOLLECTS  ALL  THAT HAS HAPPENED SINCE THE FIRST DAY 
+            OF THE CASE. Finally  things  start  to  make  sense.`;
+            content.style.display = 'block';
+        }else{
+            // content.style.visibility = 'hidden';
+
+            content.style.display = 'none';
+        }
+
+    }
     else if (count >= 26) {
         document.getElementById('right-char').src = 'img/char2.jpg';
         char2.innerHTML = `ERNEST`;
         content.style.display = 'none';
     }
     else if(count == 25){
-        document.getElementById('right-char').src = '';
-        char2.innerHTML = `FINAL GUY`;   
+        char2.innerHTML = `CHRIS HENRY`;   
         document.getElementById('next').style.display = 'inline-block';
         content.style.display = 'none';
 
     }
     else if (count >= 23) {
     // alert(`count ${count}`)
-
-        document.getElementById('right-char').src = '';
-        char2.innerHTML = `FINAL GUY`;
+        char2.innerHTML = `CHRIS HENRY`;
     }
     else if(count >= 22){
         document.getElementById('left-char').src = 'img/char1.jpg';
@@ -299,13 +311,14 @@ function display() {
         content.style.display = 'none';
     }
     else if (count >= 18) {
-        document.getElementById('right-char').src = 'final.jpg';
-        char2.innerHTML = `FINAL GUY`;
+        document.getElementById('right-char').src = 'img/chris.jpg';
+        char2.innerHTML = `CHRIS HENRY`;
 
     }
     
     else if (count >= 16) {
         document.getElementById('right-char').src = 'img/char1.jpg';
+        document.getElementById('scene').src = 'img/eastviewInner.jpg';
         char2.innerHTML = `CECIL`;
         if(count == 16){
             content.innerHTML = ` Suddenly
@@ -323,9 +336,26 @@ function display() {
         
         
     }
+    else if (count >= 15) {
+        document.getElementById('scene').src = 'img/eastview.jpg';
+        if(count == 15){
+            content.innerHTML = `Ernest and Cecil reach the location mentioned in the card. They analyze the
+            surroundings. Serene atmosphere. The neighborhood seems to be deserted.
+            They continue their path forward. They notice a person at a distance staring
+            at them. Ernest walks in and tries the handle of the door. To their surprise the
+            door was unlocked. Ernest smirks at Cecil. Withoutfurther delay, Ernest
+            enters the house. Cecil follows him. But as he enters, he starts to hear the
+            screaming voices again in his head.‘’JAKE...MAX....HARRY...STEVE...JACKSON…’’ Cecil loses his control.`;
+            content.style.display = 'block';
+        }else{
+            // content.style.visibility = 'hidden';
+
+            content.style.display = 'none';
+        }
+    }
     else if (count >= 14) {
         document.getElementById('right-char').src = 'img/char1.jpg';
-        document.getElementById('scene').src = 'final.jpg';
+        // document.getElementById('scene').src = 'final.jpg';
         content.style.display = 'none';
             char2.innerHTML = `CECIL`;
         document.getElementById('right-char').src = 'img/char1.jpg';
@@ -371,7 +401,7 @@ function display() {
     }
     else if (count >= 8) {
         document.getElementById('right-char').src = 'img/char1.jpg';
-       content.innerHTML = ``;
+        content.innerHTML = ``;
         char2.innerHTML = `CECIL`;
 
 
@@ -385,7 +415,6 @@ function display() {
     }
    
     else if (count >= 4) {
-        document.getElementById('scene').src = '';
         document.getElementById('right-char').src = 'img/char1.jpg';
         if(count == 4){
            // content.innerHTML = ``;
@@ -395,24 +424,28 @@ function display() {
 
             content.style.display = 'none';
         }
+    }
 
-    } else if (count >= 2) {
-        document.getElementById('scene').src = 'img/backyard.jpg';
-        char2.innerHTML = `CECIL`;
+    // } else if (count >= 2) {
+    //     document.getElementById('scene').src = 'img/backyard.jpg';
+    //     char2.innerHTML = `CECIL`;
 
-        if(count == 2){
-          //  content.innerHTML = ``
-            // content.style.visibility = `visible`;
-            content.style.display = 'block';
+    //     if(count == 2){
+    //       //  content.innerHTML = ``
+    //         // content.style.visibility = `visible`;
+    //         content.style.display = 'block';
 
-        }else{
-            // content.style.visibility = 'hidden';
-            content.style.display = 'none';
+    //     }else{
+    //         // content.style.visibility = 'hidden';
+    //         content.style.display = 'none';
 
-        }
+    //     }
+    // }
+    else if (count >= 0) {
+        document.getElementById('scene').src = 'img/earnesthouse.jpg'
     }
     else {
-        document.getElementById('scene').src = 'img/asylum.jpg';
+        document.getElementById('scene').src = 'img/earnesthouse.jpg';
         document.getElementById('right-char').src = 'img/char1.jpg';
 
     }
