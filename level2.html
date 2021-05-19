@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <title>Crime Scene</title>
+</head>
+
+<body>
+
+
+  <body>
+
+
+    <div class="container-fluid">
+
+      <div class="row mx-auto">
+        <div class="col-10 mt-3 mx-auto">
+          <h4 class='text-capitalize mx-auto text-center' id='heading'>unravel the mystery</h4>
+        </div>
+      </div>
+      <div class="row story-container mt-5">
+        <div class="col-lg-3 char-left mx-auto my-auto">
+          <div class="tooltip-left">
+
+            <div class="swiper-container mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+
+                  <p id="left-dialogue" class='text-capitalize'>
+
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+
+
+          </div>
+
+          <div class="card mt-2 p-1">
+            <!-- <img class="card-img-top" src="holder.js/100x180/" alt=""> -->
+            <img src="img/doctor.jpg" alt="" class="card-img-top  img-fluid character-pic mx-auto" id="left-char">
+
+            <div class="card-body">
+              <h4 class="card-title text-center" id="left-char-name">Dr.JIM</h4>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 my-auto scene" id='scene-outer'>
+          <img src="img/clinic.jpg" alt="" class="img-fluid" id="scene">
+          <div id="scene-script" class='text-transform mx-auto'>Level-2</div>
+          <div class="row mx-auto">
+            <div class="col-12 mx-auto mt-4 pt-2 text-center">
+              <button class='btn' id='prev' onclick="bwd()"><i class="fa fa-arrow-left" aria-hidden="true"></i>
+                Prev</button>
+              <button class='btn' id='next' onclick="fwd()">Next <i class="fa fa-arrow-right"
+                  aria-hidden="true"></i></button>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-3 char-right mx-auto my-auto">
+          <div class="tooltip-right">
+
+            <div class="swiper-container mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+
+                  <p id="right-dialogue">
+
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+
+          <div class="card mt-2 p-1">
+            <!-- <img class="card-img-top" src="holder.js/100x180/" alt=""> -->
+            <img src="img/ernest.jpg" alt="" class="card-img-top  img-fluid character-pic mx-auto" id="right-char">
+
+            <div class="card-body">
+              <h4 class="card-title text-center" id='right-char-name'>ERNEST</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Button trigger modal -->
+
+      <div class="row mx-auto mt-5" id='outer-nav'>
+
+        <div id='nav'>
+
+          <div class="col-12 mx-auto">
+            <div class="row mx-auto">
+              <div class="col-2 mx-auto text-center"><a href="http://" class='mx-auto btn' type='btn' target="_blank"
+                  rel="noopener noreferrer">1</a></div>
+              <div class="col-2 mx-auto text-center"><a href="http://" class='mx-auto btn' type='btn' target="_blank"
+                  rel="noopener noreferrer">2</a></div>
+              <div class="col-2 mx-auto text-center"><a href="http://" class='mx-auto btn' type='btn' target="_blank"
+                  rel="noopener noreferrer">3</a></div>
+              <div class="col-2 mx-auto text-center"><a href="http://" class='mx-auto btn' type='btn' target="_blank"
+                  rel="noopener noreferrer">4</a></div>
+              <div class="col-2 mx-auto text-center"><a href="http://" class='mx-auto btn' type='btn' target="_blank"
+                  rel="noopener noreferrer">5</a></div>
+              <div class="col-2 mx-auto text-center"><a href="http://" class='mx-auto btn' type='btn' target="_blank"
+                  rel="noopener noreferrer">6</a></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        slidesPerView: 'auto',
+        freeMode: true,
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+        mousewheel: true,
+      });
+    </script>
+    <script src="./level2.js"></script>
+
+
+
+  </body>
+
+</html>
