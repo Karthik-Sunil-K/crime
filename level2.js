@@ -51,7 +51,8 @@ var dialogue = [
     ['I WILL PLAY THE FOOTAGE', 'OH!...MY...'],
     //cecil and ernest#28
     ['I CAN’T BELIEVE THIS! I FEEL THIS KIND OF DEJAVU.', 'DO YOU KNOW HIM?'],
-    ['NO… NEVER MIND.. IT’S MY BRAIN PLAYING TRICKS AGAIN…\nHA..HAA', '']
+    ['NO… NEVER MIND.. IT’S MY BRAIN PLAYING TRICKS AGAIN…\nHA..HAA', ''],
+    ['','']
 
 
 
@@ -72,13 +73,23 @@ function display() {
     scene = document.getElementById('scene').src;
     document.getElementById("scene-script").style.opacity = 0;
 
-
-
-    if (count >= 27) {
+    if(count == 29){
+        alert('count exceeded');
+    }
+    else if (count == 28) {
         // alert(`count ${count}`)
-        document.getElementById('left-char').src = 'img/ernest.jpg'
+        document.getElementById('scene').src = 'img/cctv.jpg'
+        document.getElementById('left-char').src = 'img/maddison.png'
         document.getElementById('right-char').src = 'img/ernest.jpg'
-        document.getElementById('left-char-name').innerHTML = 'CECIL'
+        document.getElementById('left-char-name').innerHTML = 'MADDISON'
+        document.getElementById('right-char-name').innerHTML = 'ERNEST'
+    }
+
+    else if (count == 27) {
+        // alert(`count ${count}`)
+        document.getElementById('left-char').src = 'img/maddison.png'
+        document.getElementById('right-char').src = 'img/ernest.jpg'
+        document.getElementById('left-char-name').innerHTML = 'MADDISON'
         document.getElementById('right-char-name').innerHTML = 'ERNEST'
         if (count == 27) {
             document.getElementById("scene-script").style.opacity = 1;
@@ -89,35 +100,70 @@ function display() {
         }
     }
 
-    else if (count >= 26) {
+    else if (count == 26) {
         // alert(`count ${count}`)
 
         document.getElementById('scene').src = 'img/cctv.jpg';
-        document.getElementById('left-char').src = 'img/maddison.jpg'
+        document.getElementById('left-char').src = 'img/maddison.png'
         document.getElementById('right-char').src = 'img/ernest.jpg'
         document.getElementById('left-char-name').innerHTML = 'MADDISON'
         document.getElementById('right-char-name').innerHTML = 'ERNEST'
-        if (count == 26) {
             document.getElementById("scene-script").style.opacity = 1;
             document.getElementById(
                 "scene-script"
             ).innerHTML = `Maddison starts to play the footage. A lad enters the asylum through the cut-open fence. He places his foot over one of the foot marks left by the murderer. For a moment it seemed that his walk was unfocused. Then he walks over to the wall of the meditation centre and stares up at it. He takes spray paint from his backpack and paints something on the wall. It was an inverted peace symbol!`;
         }
-    }
+    
 
 
     else if (count >= 25) {
         // alert(`count ${count}`)
-        document.getElementById('left-char').src = 'img/maddison.jpg'
+        document.getElementById('left-char').src = 'img/maddison.png'
         document.getElementById('right-char').src = 'img/cecil.jpg'
         document.getElementById('left-char-name').innerHTML = 'MADDISON'
         document.getElementById('right-char-name').innerHTML = 'CECIL'
     }
     else if (count >= 24) {
         // alert(`count ${count}`)
-        document.getElementById('left-char').src = 'img/maddison.jpg'
+        document.getElementById('left-char').src = 'img/maddison.png'
         document.getElementById('right-char').src = 'img/ernest.jpg'
         document.getElementById('left-char-name').innerHTML = 'MADDISON'
+        
+    }
+    else if (count >= 23) {
+        document.getElementById('scene').src = 'img/asylum.jpg';
+        document.getElementById('left-char').src = 'img/cecil.jpg'
+        document.getElementById('right-char').src = 'img/ernest.jpg'
+        document.getElementById('left-char-name').innerHTML = 'CECIL'
+        document.getElementById('hoverChange').innerHTML = `<img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">`
+    }
+    else if (count >= 22) {
+        document.getElementById('scene').src = 'img/asylum.jpg';
+        document.getElementById('left-char').src = 'img/cecil.jpg'
+        document.getElementById('right-char').src = 'img/ernest.jpg'
+        document.getElementById('left-char-name').innerHTML = 'CECIL'
+        document.getElementById('hoverChange').innerHTML = `<img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">`
+    }
+    else if (count >= 21) {
+        document.getElementById('scene').src = 'img/asylum.jpg';
+        document.getElementById('left-char').src = 'img/cecil.jpg'
+        document.getElementById('right-char').src = 'img/ernest.jpg'
+        document.getElementById('left-char-name').innerHTML = 'CECIL'
+        document.getElementById('hoverChange').innerHTML = `<img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">`
+    }
+    else if (count >= 20) {
+        document.getElementById('scene').src = 'img/asylum.jpg';
+        document.getElementById('left-char').src = 'img/cecil.jpg'
+        document.getElementById('right-char').src = 'img/ernest.jpg'
+        document.getElementById('left-char-name').innerHTML = 'CECIL'
+        document.getElementById('hoverChange').innerHTML = `<img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">`
+    }
+    else if (count >= 19) {
+        document.getElementById('scene').src = 'img/asylum.jpg';
+        document.getElementById('left-char').src = 'img/cecil.jpg'
+        document.getElementById('right-char').src = 'img/ernest.jpg'
+        document.getElementById('left-char-name').innerHTML = 'CECIL'
+        document.getElementById('hoverChange').innerHTML = `<img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">`
     }
     else if (count >= 18) {
         document.getElementById('scene').src = 'img/asylum.jpg';
@@ -125,24 +171,9 @@ function display() {
         document.getElementById('right-char').src = 'img/ernest.jpg'
         document.getElementById('left-char-name').innerHTML = 'CECIL'
         document.getElementById('hoverChange').innerHTML = `<img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">`
-    
     }
-    //hover starts from 11 and end at 18 after reach 18 asylum pic should shown and before 11 also asylum pic
-    else if (count >= 11) {
-        document.getElementById('scene').src = 'img/asylum.jpg';
-        document.getElementById('left-char').src = 'img/cecil.jpg'
-        document.getElementById('right-char').src = 'img/ernest.jpg'
-        document.getElementById('left-char-name').innerHTML = 'CECIL'
-        document.getElementById('hoverChange').innerHTML = `
-        
-            
-                <img src="./img/hover2.png" alt="wastebin" srcset="">
-            
-        
-        `
-    }
-    else if (count >= 8) {
-        document.getElementById('scene').src = 'img/asylum.jpg';
+    else if (count == 17) {
+       
         document.getElementById('left-char').src = 'img/cecil.jpg'
         document.getElementById('right-char').src = 'img/ernest.jpg'
         document.getElementById('left-char-name').innerHTML = 'CECIL'
@@ -151,34 +182,180 @@ function display() {
         <img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">
         
         `
+        
     }
-    else if (count >= 2) {
-        if (count == 2) {
-            document.getElementById("scene-script").style.opacity = 1
-            document.getElementById(
-                "scene-script"
-            ).innerHTML = `After the preliminary examination of the bodies, they were sent to Dr.Jim for autopsy.
-        After some time, Jim comes out of the examination room to share the result with Ernest.`;
-        }
+    else if (count == 16) {
+       
+        document.getElementById('left-char').src = 'img/cecil.jpg'
+        document.getElementById('right-char').src = 'img/ernest.jpg'
+        document.getElementById('left-char-name').innerHTML = 'CECIL'
+        document.getElementById('hoverChange').innerHTML = `
+        
+        <img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">
+        
+        `
+        
     }
-    // else if (count >= 0) {
-    //     if(count == 0){
-    //     document.getElementById("scene-script").style.opacity = 1
-    //     document.getElementById(
-    //       "scene-script"
-    //     ).innerHTML = `Dr. Jim’s private autopsy centre . Dr.Jim served in the army for British air force and after his retirement he tied up with private and public agencies for autopsy related consultations.`;
-    //    }
-    // }
-    else if (count >= 0) {
-        if (count == 0) {
-            document.getElementById("scene-script").style.opacity = 1
-            document.getElementById(
-                "scene-script"
-            ).innerHTML = `Dr. Jim’s private autopsy centre . Dr.Jim served in the army for British air force and after his retirement he tied up with private and public agencies for autopsy related consultations.`;
-        }
+    else if (count == 15) {
+       
+        document.getElementById('left-char').src = 'img/cecil.jpg'
+        document.getElementById('right-char').src = 'img/ernest.jpg'
+        document.getElementById('left-char-name').innerHTML = 'CECIL'
+        document.getElementById('hoverChange').innerHTML = `
+        
+        <img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">
+        
+        `
+        
+    }
+    else if (count == 14) {
+       
+        document.getElementById('left-char').src = 'img/cecil.jpg'
+        document.getElementById('right-char').src = 'img/ernest.jpg'
+        document.getElementById('left-char-name').innerHTML = 'CECIL'
+        document.getElementById('hoverChange').innerHTML = `
+        
+        <img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">
+        
+        `
+        
+    }
+    else if (count == 13) {
+       
+        document.getElementById('left-char').src = 'img/cecil.jpg'
+        document.getElementById('right-char').src = 'img/ernest.jpg'
+        document.getElementById('left-char-name').innerHTML = 'CECIL'
+        document.getElementById('hoverChange').innerHTML = `
+        
+        <img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">
+        
+        `
+        
+    }
+
+    else if (count == 12) {
+       
+        document.getElementById('left-char').src = 'img/cecil.jpg'
+        document.getElementById('right-char').src = 'img/ernest.jpg'
+        document.getElementById('left-char-name').innerHTML = 'CECIL'
+        document.getElementById('hoverChange').innerHTML = `
+        
+        <img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">
+        
+        `
+        
+    }
+    //hover starts from 11 and end at 18 after reach 18 asylum pic should shown and before 11 also asylum pic
+    else if (count == 11) {
+        // document.getElementById('scene').src = 'img/asylum.jpg';
+        document.getElementById('left-char').src = 'img/cecil.jpg'
+        document.getElementById('right-char').src = 'img/ernest.jpg'
+        document.getElementById('left-char-name').innerHTML = 'CECIL'
+        document.getElementById(
+            "scene-outer"
+          ).innerHTML = `<div class="row mx-auto">
+                                                              <div class="col-12 mx-auto mt-4 pt-2 text-center">
+                                                                <div id="hoverChange">
+                                                                  <div class="evidence mb-3">
+                                                                    <img src="./img/hover2.png" alt="book" srcset="">
+                                                                  </div>
+                                                                </div>
+                                                                <button class='btn' id = 'prev' onclick="bwd()"><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev</button>
+                                                                <button class='btn' id = 'next' onclick="fwd()">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                                                              </div>
+                                                            </div>`;
+        
+    }
+    else if (count == 10) {
+        // document.getElementById('scene').src = 'img/asylum.jpg';
+        document.getElementById('left-char').src = 'img/cecil.jpg'
+        document.getElementById('right-char').src = 'img/ernest.jpg'
+        document.getElementById('left-char-name').innerHTML = 'CECIL'
+        document.getElementById('hoverChange').innerHTML = `
+        
+        <img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">
+        
+        `
+        
+    }
+    else if (count == 9) {
+        document.getElementById('scene').src = 'img/asylum.jpg';
+        document.getElementById('left-char').src = 'img/cecil.jpg'
+        document.getElementById('right-char').src = 'img/ernest.jpg'
+        document.getElementById('left-char-name').innerHTML = 'CECIL'
+    
+    }
+    else if (count == 8) {
+        document.getElementById('scene').src = 'img/asylum.jpg';
+        document.getElementById('left-char').src = 'img/cecil.jpg'
+        document.getElementById('right-char').src = 'img/ernest.jpg'
+        document.getElementById('left-char-name').innerHTML = 'CECIL'
+    }
+    else if (count == 7) {
         document.getElementById('left-char').src = 'img/doctor.jpg'
         document.getElementById('right-char').src = 'img/ernest.jpg'
         document.getElementById('scene').src = 'img/clinic.jpg';
+        document.getElementById('left-char-name').innerHTML = 'DR.JIM'
+        
+    }
+    else if (count == 6) {
+        document.getElementById('left-char').src = 'img/doctor.jpg'
+        document.getElementById('right-char').src = 'img/ernest.jpg'
+        document.getElementById('scene').src = 'img/clinic.jpg';
+        document.getElementById('left-char-name').innerHTML = 'DR.JIM'
+        
+    }
+    else if (count == 5) {
+        document.getElementById('left-char').src = 'img/doctor.jpg'
+        document.getElementById('right-char').src = 'img/ernest.jpg'
+        document.getElementById('scene').src = 'img/clinic.jpg';
+        document.getElementById('left-char-name').innerHTML = 'DR.JIM'
+        
+    }
+    else if (count == 4) {
+        document.getElementById('left-char').src = 'img/doctor.jpg'
+        document.getElementById('right-char').src = 'img/ernest.jpg'
+        document.getElementById('scene').src = 'img/clinic.jpg';
+        document.getElementById('left-char-name').innerHTML = 'DR.JIM'
+        
+    }
+    else if (count == 3) {
+        document.getElementById('left-char').src = 'img/doctor.jpg'
+        document.getElementById('right-char').src = 'img/ernest.jpg'
+        document.getElementById('scene').src = 'img/clinic.jpg';
+        document.getElementById('left-char-name').innerHTML = 'DR.JIM'
+        
+    }
+    else if (count == 2) {
+        document.getElementById("scene-script").style.opacity = 1
+        document.getElementById(
+            "scene-script"
+        ).innerHTML = `After the preliminary examination of the bodies, they were sent to Dr.Jim for autopsy.
+        After some time, Jim comes out of the examination room to share the result with Ernest.`;
+        document.getElementById('left-char').src = 'img/doctor.jpg'
+        document.getElementById('right-char').src = 'img/ernest.jpg'
+        document.getElementById('scene').src = 'img/clinic.jpg';
+        document.getElementById('left-char-name').innerHTML = 'DR.JIM'
+        
+    }
+    else if (count == 1) {
+        
+        document.getElementById('left-char').src = 'img/doctor.jpg'
+        document.getElementById('right-char').src = 'img/ernest.jpg'
+        document.getElementById('scene').src = 'img/clinic.jpg';
+        document.getElementById('left-char-name').innerHTML = 'DR.JIM'
+    }
+    else if (count == 0) {
+        
+        document.getElementById("scene-script").style.opacity = 1
+        document.getElementById(
+            "scene-script"
+        ).innerHTML = `Dr. Jim’s private autopsy centre . Dr.Jim served in the army for British air force and after his retirement he tied up with private and public agencies for autopsy related consultations.`;
+        
+        document.getElementById('left-char').src = 'img/doctor.jpg'
+        document.getElementById('right-char').src = 'img/ernest.jpg'
+        document.getElementById('scene').src = 'img/clinic.jpg';
+        document.getElementById('left-char-name').innerHTML = 'DR.JIM'
     }
     else {
         document.getElementById('scene').src = 'img/asylum.jpg';
@@ -190,9 +367,22 @@ function fwd() {
 
     count = count + 1;
 
-    display();
-
-}
+    if (count == 12) {
+        document.getElementById(
+          "scene-outer"
+        ).innerHTML = `<img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">
+                       <div id="scene-script" class = 'text-transform mx-auto'>hello this is nyc</div>
+           <div class="row mx-auto">
+             <div class="col-12 mx-auto mt-4 pt-2 text-center">
+                 <button class='btn' id = 'prev' onclick="bwd();"><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev</button>
+                 <button class='btn' onclick="fwd();">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+           
+           
+             </div>
+           </div>`;
+     }
+     display();
+   }
 
 function bwd() {
 
@@ -203,6 +393,18 @@ function bwd() {
     }
 
     count = count - 1;
+    if (count == 10) {
+        document.getElementById(
+          "scene-outer"
+        ).innerHTML = `<img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">
+                        <div id="scene-script" class = 'text-transform mx-auto'>hello this is nyc</div>
+                          <div class="row mx-auto">
+                            <div class="col-12 mx-auto mt-4 pt-2 text-center">
+                              <button class='btn' id = 'prev' onclick="bwd();"><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev</button>
+                                <button class='btn' onclick="fwd();">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                              </div>
+                          </div>`;
+      }
     display();
 
 }
