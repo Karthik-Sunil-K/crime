@@ -79,7 +79,7 @@ var dialogue = [
     [`LO SIENTO DAVID , MY BAD .`, ``],
     // #25
     [`WHAT DO YOU THINK ? WHO IS IT?`, ``],
-    [``,``],
+    [``, ``],
     // 27 rubbenbrown as suspect
     // dialogue 1 ernst dialogue 2 cecil
     [`WHAT! WHY HIM? IT’S PRETTY EVIDENT THAT HE WAS IN THE PATIENT
@@ -114,7 +114,7 @@ var dialogue = [
     INTERRUPTED THEM MOREOVER DAVID’S
     PULSE RATE WAS NORMAL HE WASN’T
     LYING.`, ``],
-    [``,``],
+    [``, ``],
 
     // 39 david as suspect dialogue 1 ernst dialogue 2 cecil
     [`YOU MADE A TOUGH CALL. IT’S TRUE THAT HE WAS NEAR TO THE
@@ -146,7 +146,7 @@ var dialogue = [
 
     [` THAT GAVE ENOUGH TIME TO
     BRING VICTIMS TO THE MURDER SPOT , DIDN’T ? JUST LIKE YOUR BOSS
-    PLANNED , AM I RIGHT ?`,``],
+    PLANNED , AM I RIGHT ?`, ``],
 
     [`SO WHO IS YOUR BOSS , WHY DO IT NOW ? WHY DO IT HERE ? DON’T SAY
     THAT THEY WERE RANDOMLY FIGHTING EACH OTHER . WHAT ACTUALLY
@@ -154,7 +154,7 @@ var dialogue = [
     DIE`],
 
     // dialogue 1 ernst dialogue 2 cecil
-    [``,`HE’S DEAD!`]
+    [``, `HE’S DEAD!`]
 
 
 
@@ -163,87 +163,78 @@ var left = document.getElementById('left-dialogue');
 var right = document.getElementById('right-dialogue');
 var content = document.getElementById('scene-script');
 
-var content = document.getElementById('scene-script');
 var count = -1;
 
 
 function display() {
-  
 
-        left.innerHTML = dialogue[count][0].toLowerCase();
-        right.innerHTML = dialogue[count][1].toLowerCase();
-        scene = document.getElementById('scene').src;
-        document.getElementById('count').innerHTML = count;
-        var char2 = document.getElementById('char-2-name');
-    
-    
-  
 
-    // if(count == 27 || count == 30 || count == 33 || count == 38 || count == 40 ){
-      
-    //     document.getElementById('prev').style.display = 'none';
-    // }else if(count == 29 || count == 32){
-        
-    //     count = 39;
-    //     document.getElementById('prev').style.display = 'inline-block';
-
-    // }else if(count == 36){
-       
-    //     count = 41;
-    //     document.getElementById('prev').style.display = 'inline-block';
-    // }
-    // else{
-    //     document.getElementById('prev').style.display = 'inline-block';
-    // }
-    if(count == 40){
-        
-
-    document.getElementById('prev').disabled = true;
-
-    }
-else if(count >= 38){
-    document.getElementById('prev').style.display = 'inline-block';
+    left.innerHTML = dialogue[count][0].toLowerCase();
+    right.innerHTML = dialogue[count][1].toLowerCase();
+    scene = document.getElementById('scene').src;
+    document.getElementById('count').innerHTML = count;
+    var char2 = document.getElementById('char-2-name');
+if(count >= 42){
+    document.getElementById('right-char').src = `img/max.png`;
+    char2.innerHTML = 'MAX';
+}
+else if(count >= 41){
+    document.getElementById('right-char').src = `img/reed.jpg`;
+    char2.innerHTML = `REED`;
     document.getElementById('prev').disabled = false;
 
-
 }
-else if(count >= 33){
-
-    document.getElementById('prev').style.display = 'inline-block';
-    document.getElementById('prev').disabled = false;
-
-    if(count == 36){
-
-        count = 39;
-
-    }
-
-    if(count == 37){
-    document.getElementById('prev').style.display = 'none';
-
-    }
+    else if (count == 40) {
 
 
-}
-else if(count > 26){
-    document.getElementById('prev').style.display = 'none';
-    if(count == 28){
-        document.getElementById('prev').style.display = 'inline-block';
         document.getElementById('prev').disabled = true;
-        count = 39;
-    }
-    else if(count >= 30 && count <32 ){
-
-    document.getElementById('prev').style.display = 'inline-block';
-    document.getElementById('prev').disabled = false;
-
-    if(count == 31){
-        count = 39;
-    }
 
     }
+    else if (count >= 38) {
+        document.getElementById('prev').style.display = 'inline-block';
+        document.getElementById('prev').disabled = false;
 
-}
+
+    }
+    else if (count >= 33) {
+
+        document.getElementById('prev').style.display = 'inline-block';
+        document.getElementById('prev').disabled = false;
+
+        if (count == 36) {
+
+            count = 39;
+
+        }
+
+        if (count == 37) {
+            document.getElementById('prev').style.display = 'none';
+
+
+        }
+
+
+    }
+    else if (count > 26) {
+        document.getElementById('prev').style.display = 'none';
+      
+        if (count == 28) {
+            document.getElementById('prev').style.display = 'inline-block';
+            document.getElementById('prev').disabled = true;
+            count = 39;
+        }
+        else if (count >= 30 && count < 32) {
+
+            document.getElementById('prev').style.display = 'inline-block';
+            document.getElementById('prev').disabled = false;
+
+            if (count == 31) {
+                count = 39;
+            }
+
+        }
+
+    }
     else if (count == 26) {
         content.style.display = 'block';
         document.getElementById('next').style.display = 'none';
@@ -280,9 +271,9 @@ else if(count > 26){
 
 
 
-           sceneOuter.innerHTML = `
+            sceneOuter.innerHTML = `
     
-    <img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">
+    <img src="img/survillence.png" alt="" class="img-fluid" id="scene">
     <div id="scene-script" class = 'text-transform mx-auto'>hello this is nyc</div>
 
     <div class="row mx-auto">
@@ -303,9 +294,9 @@ else if(count > 26){
 
 
 
-           sceneOuter.innerHTML = `
+            sceneOuter.innerHTML = `
         
-        <img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">
+        <img src="img/staffroom.jpg" alt="" class="img-fluid" id="scene">
         <div id="scene-script" class = 'text-transform mx-auto'>hello this is nyc</div>
 
         <div class="row mx-auto">
@@ -327,9 +318,9 @@ else if(count > 26){
 
 
 
-           sceneOuter.innerHTML = `
+            sceneOuter.innerHTML = `
             
-            <img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">
+            <img src="img/survillence.png" alt="" class="img-fluid" id="scene">
         <div id="scene-script" class = 'text-transform mx-auto'>hello this is nyc</div>
 
             <div class="row mx-auto">
@@ -352,9 +343,9 @@ else if(count > 26){
 
 
 
-           sceneOuter.innerHTML = `
+            sceneOuter.innerHTML = `
                 
-                <img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">
+                <img src="img/survillence.png" alt="" class="img-fluid" id="scene">
         <div id="scene-script" class = 'text-transform mx-auto'>hello this is nyc</div>
 
                 <div class="row mx-auto">
@@ -372,53 +363,56 @@ else if(count > 26){
         })
 
     }
-    if(count == 25){
-        document.getElementById('right-char').src = 'img/david.jpg';
-        char2.innerHTML = `DAVID`;   
+ 
+    else if (count >= 25) {
+        document.getElementById('right-char').src = 'img/cecil.jpg';
+        char2.innerHTML = `CECIL`;
+      if(count == 25){
         document.getElementById('next').style.display = 'inline-block';
         content.style.display = 'none';
+      }
 
     }
     else if (count >= 23) {
-    // alert(`count ${count}`)
+        // alert(`count ${count}`)
 
-        document.getElementById('right-char').src = 'img/david.jpg';
+        document.getElementById('right-char').src = 'img/david.png';
         char2.innerHTML = `DAVID`;
-       
+
 
     }
     else if (count >= 18) {
-        document.getElementById('right-char').src = 'img/max.jpg';
+        document.getElementById('right-char').src = 'img/max.png';
         char2.innerHTML = `MAX`;
 
     }
     else if (count >= 16) {
-        document.getElementById('right-char').src = 'img/maddison.jpg';
+        document.getElementById('right-char').src = 'img/maddison.png';
         char2.innerHTML = `MADDISON`;
 
-        
+
     }
     else if (count >= 14) {
-        document.getElementById('right-char').src = 'img/rube.jpg';
-        document.getElementById('scene').src = 'img/staffroom.jpg';
+        document.getElementById('right-char').src = 'img/ruben.png';
+        document.getElementById('scene').src = 'img/staffroom.png';
         content.style.display = 'none';
-            char2.innerHTML = `RUBEN`;
-        document.getElementById('right-char').src = 'img/rube.jpg';
+        char2.innerHTML = `RUBEN`;
+        document.getElementById('right-char').src = 'img/ruben.png';
 
-    
+
 
     }
     else if (count >= 12) {
         document.getElementById('right-char').src = 'img/reed.jpg';
         char2.innerHTML = `REED`;
         content.style.display = 'none';
-        if(count == 13){
+        if (count == 13) {
             content.innerHTML = `All the staff members who were in the Asylum during the murder is
             summoned at staffroom.`;
             content.style.display = 'block';
-        char2.innerHTML = `REED`;
-        document.getElementById('right-char').src = 'img/reed.jpg';
-        document.getElementById('scene').src = 'img/murder-spot.png';
+            char2.innerHTML = `REED`;
+            document.getElementById('right-char').src = 'img/reed.jpg';
+            document.getElementById('scene').src = 'img/murder-spot.png';
 
 
 
@@ -438,26 +432,26 @@ else if(count > 26){
         char2.innerHTML = `REED`;
 
 
-    }else if(count == 7){
+    } else if (count == 7) {
         content.innerHTML = `find the weapon from the fig?`;
-        content.style.display  = 'block';
+        content.style.display = 'block';
         char2.innerHTML = `CECIL`;
         document.getElementById('right-char').src = 'img/char1.jpg';
 
 
     }
-   
+
     else if (count >= 4) {
         document.getElementById('scene').src = 'img/murder-spot.png';
         document.getElementById('right-char').src = 'img/char1.jpg';
-        if(count == 4){
+        if (count == 4) {
             content.innerHTML = `Two bodies are found lying face down in the abandoned garage space near the
             security guard room. The victims’ head and the area below the nose have been
             deeply crushed. Three weapons with blood stains on it were found near the
             bodies. The garbage bin has been turned over and has caused the waste items
             to litter around.`;
             content.style.display = 'block';
-        }else{
+        } else {
             // content.style.visibility = 'hidden';
 
             content.style.display = 'none';
@@ -467,13 +461,13 @@ else if(count > 26){
         document.getElementById('scene').src = 'img/backyard.jpg';
         char2.innerHTML = `CECIL`;
 
-        if(count == 2){
+        if (count == 2) {
             content.innerHTML = `Their attention is drawn to the barbed wire fencing with a
             gaping hole, wide enough for a man to pass through.`
             // content.style.visibility = `visible`;
             content.style.display = 'block';
 
-        }else{
+        } else {
             // content.style.visibility = 'hidden';
             content.style.display = 'none';
 
@@ -488,7 +482,7 @@ else if(count > 26){
 function fwd() {
 
     count = count + 1;
-    
+
     display();
 
 }
