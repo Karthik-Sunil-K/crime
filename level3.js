@@ -240,6 +240,7 @@ caught sight of some sticky notes and old newspaper cuttings in the tent
     document.getElementById("right-char").src = "img/reed.jpg";
     document.getElementById("right-caption").innerHTML = "AGENT REED";
   }
+    // adding task 4
   else if (count == 15) {
     document.getElementById(
       "scene-outer"
@@ -255,6 +256,7 @@ caught sight of some sticky notes and old newspaper cuttings in the tent
                                                         </div>
                                                       </div>`;
   }
+    
   else if (count == 16) {
    
     document.getElementById("scene-script").style.opacity = 1;
