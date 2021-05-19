@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    position:relative;
+}
+
+html,body{
+    scroll-behavior: smooth;
+    background:#060606;
+    /* font-family: 'Rowdies', cursive; */
+}
+
+.container-fluid{
+    height:fit-content;
+    width:fit-content;
+    background: #060606;
+overflow:hidden;
+}
