@@ -107,13 +107,13 @@ var dialogue = [
     PIECE OF HIS ID TAG AT THE SPOT.`, ``],
     [`I
     SUPPOSE THINGS DIDN’T GO SMOOTHLY AS
-    PLANNED, DAVID’S PRESENCE MIGHT HAVE
-    INTERRUPTED THEM MOREOVER DAVID’S
-    PULSE RATE WAS NORMAL HE WASN’T
-    LYING.
+    PLANNED,
     `, ``],
     // 37 dialogue 1 ernst dialogue 2 cecil
-    [`REED ... TAKE MAX DOWNSTAIRS!`, `SURE. AFTER YOU, SIR.`],
+    [` DAVID’S PRESENCE MIGHT HAVE
+    INTERRUPTED THEM MOREOVER DAVID’S
+    PULSE RATE WAS NORMAL HE WASN’T
+    LYING.`, ``],
     [``,``],
 
     // 39 david as suspect dialogue 1 ernst dialogue 2 cecil
@@ -123,6 +123,8 @@ var dialogue = [
     MULTIPLE REDDISH SCARS ON HIS HANDS ARE MAYBE BECAUSE HE
     TRIED TO MANAGE THE PATIENTS WHO GOT DOWNSTAIRS . ALSO, I
     DID CHECK HIS PULSE . IT WAS NORMAL`, `WHY ARE WE MISSING LINK?`],
+
+    // #breakpoint for jumb2
     [`I GOT SOMEONE’S BROKEN TAG
     FROM THE SPOT. YEAH! IT’S MAX!!`, ``],
     // 42 dialogue 1 ernst dialogue 2 cecil
