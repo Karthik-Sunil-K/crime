@@ -138,7 +138,7 @@ DECODE THE CONTENT.`,
     `AGREED.`,
   ],
 ];
-var count = 10;
+var count = -1;
 
 
 var left = document.getElementById("left-dialogue");
