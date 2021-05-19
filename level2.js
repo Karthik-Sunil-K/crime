@@ -183,6 +183,7 @@ function display() {
     left.innerHTML = dialogue[count][0].toLowerCase();
     right.innerHTML = dialogue[count][1].toLowerCase();
     scene = document.getElementById('scene').src;
+    document.getElementById("scene-script").style.opacity = 0;
 
 
 
@@ -192,23 +193,29 @@ function display() {
         document.getElementById('right-char').src = 'img/ernest.jpg'
         document.getElementById('left-char-name').innerHTML = 'CECIL'
         document.getElementById('right-char-name').innerHTML = 'ERNEST'
+        if(count == 27){
+        document.getElementById("scene-script").style.opacity = 1;
         document.getElementById(
             "scene-script"
           ).innerHTML = `After he finished his painting he unknowingly glanced up at the CCTV. Both his eyes were a white.`;
         
-         
+        }
     }
 
     else if (count >=26) {
         // alert(`count ${count}`)
+        
+        document.getElementById('scene').src = 'img/cctv.jpg';
         document.getElementById('left-char').src = 'img/maddison.jpg'
         document.getElementById('right-char').src = 'img/ernest.jpg'
         document.getElementById('left-char-name').innerHTML = 'MADDISON'
         document.getElementById('right-char-name').innerHTML = 'ERNEST'
+        if(count ==26){
+        document.getElementById("scene-script").style.opacity = 1;
         document.getElementById(
             "scene-script"
           ).innerHTML = `Maddison starts to play the footage. A lad enters the asylum through the cut-open fence. He places his foot over one of the foot marks left by the murderer. For a moment it seemed that his walk was unfocused. Then he walks over to the wall of the meditation centre and stares up at it. He takes spray paint from his backpack and paints something on the wall. It was an inverted peace symbol!`;
-         
+        }
     }
 
 
@@ -226,27 +233,38 @@ function display() {
         document.getElementById('left-char-name').innerHTML = 'MADDISON'
     }
     else if (count >= 8) {
-        
+        document.getElementById('scene').src = 'img/murder-spot.png';
         document.getElementById('left-char').src = 'img/cecil.jpg'
         document.getElementById('right-char').src = 'img/ernest.jpg'
         document.getElementById('left-char-name').innerHTML = 'CECIL'
     }
-    else if (count === 2) {
+    else if (count >= 2) {
+        if(count == 2){
+        document.getElementById("scene-script").style.opacity = 1
         document.getElementById(
           "scene-script"
         ).innerHTML = `After the preliminary examination of the bodies, they were sent to Dr.Jim for autopsy.
         After some time, Jim comes out of the examination room to share the result with Ernest.`;
        }
-    else if (count === 1) {
-        document.getElementById(
-          "scene-script"
-        ).innerHTML = `Dr. Jim’s private autopsy centre . Dr.Jim served in the army for British air force and after his retirement he tied up with private and public agencies for autopsy related consultations.`;
-       }
+    }
+    // else if (count >= 0) {
+    //     if(count == 0){
+    //     document.getElementById("scene-script").style.opacity = 1
+    //     document.getElementById(
+    //       "scene-script"
+    //     ).innerHTML = `Dr. Jim’s private autopsy centre . Dr.Jim served in the army for British air force and after his retirement he tied up with private and public agencies for autopsy related consultations.`;
+    //    }
+    // }
     else if (count >= 0) {
-        
+        if(count == 0){
+            document.getElementById("scene-script").style.opacity = 1
+            document.getElementById(
+              "scene-script"
+            ).innerHTML = `Dr. Jim’s private autopsy centre . Dr.Jim served in the army for British air force and after his retirement he tied up with private and public agencies for autopsy related consultations.`;
+           }
         document.getElementById('left-char').src = 'img/doctor.jpg'
         document.getElementById('right-char').src = 'img/ernest.jpg'
-        document.getElementById('scene').src = 'img/asylum.jpg';
+        document.getElementById('scene').src = 'img/clinic.jpg';
     }
     else {
         document.getElementById('scene').src = 'img/asylum.jpg';

@@ -13,10 +13,10 @@ body{
 }
 
 
-.scene{
+/* .scene{
     height: 350px;
     
-}
+} */
 #heading{
     color:rgb(241, 8, 66);
 }
@@ -47,6 +47,8 @@ body{
     opacity:0.9;
     border-radius:10px;
     font-weight:700;
+    width:90%;
+
     
 }
 .scene .btn{
@@ -55,7 +57,6 @@ body{
    color:rgb(241, 8, 66);
    margin-right:10px;
 }
-
 
 
 .tooltip-left, .tooltip-right{
@@ -100,7 +101,9 @@ body{
     height:100px;
 }
 
-
+#scene-outer:hover #scene-script{
+    background-color:transparent;
+}
 
 @keyframes navfull{
     from{
@@ -142,3 +145,37 @@ width:100%;
     }
     
 } */
+
+
+@media  screen and (max-width:500px) {
+
+    .container-fluid{
+        height:max-content;
+        font-size:14px;
+    }
+
+    .story-container{
+        display :grid;
+    }
+    .card-img-top{
+        height:100px;
+        width:auto;
+    }
+
+    .btn{
+        margin-top:25px;
+        margin-bottom:50px;
+    }
+
+    .card-title{
+        font-size:16px;
+    }
+    #scene-script{
+        height:55%;
+        width:90%;
+        top:0;
+        left:50%;
+        transform:translate(-50%,0);
+        opacity:0.8;
+    }
+}
