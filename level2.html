@@ -12,6 +12,31 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css">
   <title>Crime Scene</title>
+  <style>
+    .evidence{
+
+        height:47vmin;
+        width:100%;
+        background-color:gainsboro;
+        background-image:url(img/hover3.png);
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size:contain;
+        position:relative;
+
+    }
+    .evidence img{
+        height:15vmin;
+        width:auto;
+        border:none;
+        position:absolute;
+        display:block;
+        bottom:1.65vmin;
+    }
+    .evidence img:hover{
+        transform:translate(20px, -40px);
+    }
+</style>
 </head>
 
 <body>
@@ -56,9 +81,12 @@
           </div>
         </div>
 
-
         <div class="col-lg-6 my-auto scene" id='scene-outer'>
-          <img src="img/clinic.jpg" alt="" class="img-fluid" id="scene">
+
+          <div id="hoverChange">
+            <img src="img/clinic.jpg" alt="" class="img-fluid" id="scene">
+          </div>
+          
           <div id="scene-script" class='text-transform mx-auto'>Level-2</div>
           <div class="row mx-auto">
             <div class="col-12 mx-auto mt-4 pt-2 text-center">
@@ -70,6 +98,7 @@
             </div>
           </div>
         </div>
+  
 
 
         <div class="col-lg-3 char-right mx-auto my-auto">

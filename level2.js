@@ -65,120 +65,7 @@ var count = -1;
 function display() {
 
 
-    if (count == 30) {
-        sceneOuter.innerHTML = `
-        <div class = 'row mx-auto'>
-        <div class = 'col-12 mx-auto'>
-
-        <h4 class = 'text-center text-capitalize'>who it can be ?</h4>
-        </div>
-        </div>
-
-
-        <div class = 'row mx-auto'>
-        <div class = 'col-12 mx-auto'>
-
-        <span>MAX: <input type="checkbox" name="max" id="max"></span><br>
-        <span>DAVID: <input type="checkbox" name="david" id="david"></span><br>
-        <span>MADDISON: <input type="checkbox" name="maddison" id="maddison"></span><br>
-        <span>RUBBEN: <input type="checkbox" name="rubben" id="rubben" ></span>
-
-
-        </div>
-        </div>`
-
-
-        var maxDialogue = document.getElementById('max');
-        var davidDialogue = document.getElementById('david');
-        var madDialogue = document.getElementById('maddison');
-        var rubDialogue = document.getElementById('rubben');
-        maxDialogue.addEventListener("click", function () {
-
-
-
-            sceneOuter.innerHTML = `
     
-    <img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">
-    <div class="row mx-auto">
-      <div class="col-12 mx-auto mt-4 pt-2 text-center">
-          <button class='btn' id = 'prev' onclick="bwd()"><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev</button>
-          <button class='btn' onclick="fwd()">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-    
-    
-      </div>
-    </div>
-    
-    `
-            count = 32;
-
-        })
-
-        davidDialogue.addEventListener("click", function () {
-
-
-
-            sceneOuter.innerHTML = `
-        
-        <img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">
-        <div class="row mx-auto">
-          <div class="col-12 mx-auto mt-4 pt-2 text-center">
-              <button class='btn'id = 'prev' onclick="bwd()"><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev</button>
-              <button class='btn' onclick="fwd()">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-        
-        
-          </div>
-        </div>
-        
-        `
-            count = 37;
-
-        })
-
-
-        madDialogue.addEventListener("click", function () {
-
-
-
-            sceneOuter.innerHTML = `
-            
-            <img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">
-            <div class="row mx-auto">
-              <div class="col-12 mx-auto mt-4 pt-2 text-center">
-                  <button class='btn'id = 'prev' onclick="bwd()"><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev</button>
-                  <button class='btn' onclick="fwd()">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-            
-            
-              </div>
-            </div>
-            
-            `
-            count = 29;
-
-        })
-
-
-        rubDialogue.addEventListener("click", function () {
-
-
-
-            sceneOuter.innerHTML = `
-                
-                <img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">
-                <div class="row mx-auto">
-                  <div class="col-12 mx-auto mt-4 pt-2 text-center">
-                      <button class='btn'id = 'prev' onclick="bwd()"><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev</button>
-                      <button class='btn' onclick="fwd()">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-                
-                
-                  </div>
-                </div>
-                
-                `
-            count = 26;
-
-        })
-
-    }
 
     left.innerHTML = dialogue[count][0].toLowerCase();
     right.innerHTML = dialogue[count][1].toLowerCase();
@@ -187,65 +74,92 @@ function display() {
 
 
 
-    if (count >=27) {
+    if (count >= 27) {
         // alert(`count ${count}`)
         document.getElementById('left-char').src = 'img/ernest.jpg'
         document.getElementById('right-char').src = 'img/ernest.jpg'
         document.getElementById('left-char-name').innerHTML = 'CECIL'
         document.getElementById('right-char-name').innerHTML = 'ERNEST'
-        if(count == 27){
-        document.getElementById("scene-script").style.opacity = 1;
-        document.getElementById(
-            "scene-script"
-          ).innerHTML = `After he finished his painting he unknowingly glanced up at the CCTV. Both his eyes were a white.`;
-        
+        if (count == 27) {
+            document.getElementById("scene-script").style.opacity = 1;
+            document.getElementById(
+                "scene-script"
+            ).innerHTML = `After he finished his painting he unknowingly glanced up at the CCTV. Both his eyes were a white.`;
+
         }
     }
 
-    else if (count >=26) {
+    else if (count >= 26) {
         // alert(`count ${count}`)
-        
+
         document.getElementById('scene').src = 'img/cctv.jpg';
         document.getElementById('left-char').src = 'img/maddison.jpg'
         document.getElementById('right-char').src = 'img/ernest.jpg'
         document.getElementById('left-char-name').innerHTML = 'MADDISON'
         document.getElementById('right-char-name').innerHTML = 'ERNEST'
-        if(count ==26){
-        document.getElementById("scene-script").style.opacity = 1;
-        document.getElementById(
-            "scene-script"
-          ).innerHTML = `Maddison starts to play the footage. A lad enters the asylum through the cut-open fence. He places his foot over one of the foot marks left by the murderer. For a moment it seemed that his walk was unfocused. Then he walks over to the wall of the meditation centre and stares up at it. He takes spray paint from his backpack and paints something on the wall. It was an inverted peace symbol!`;
+        if (count == 26) {
+            document.getElementById("scene-script").style.opacity = 1;
+            document.getElementById(
+                "scene-script"
+            ).innerHTML = `Maddison starts to play the footage. A lad enters the asylum through the cut-open fence. He places his foot over one of the foot marks left by the murderer. For a moment it seemed that his walk was unfocused. Then he walks over to the wall of the meditation centre and stares up at it. He takes spray paint from his backpack and paints something on the wall. It was an inverted peace symbol!`;
         }
     }
 
 
-    else if (count >=25) {
+    else if (count >= 25) {
         // alert(`count ${count}`)
         document.getElementById('left-char').src = 'img/maddison.jpg'
         document.getElementById('right-char').src = 'img/cecil.jpg'
         document.getElementById('left-char-name').innerHTML = 'MADDISON'
         document.getElementById('right-char-name').innerHTML = 'CECIL'
     }
-    else if (count >=24) {
+    else if (count >= 24) {
         // alert(`count ${count}`)
         document.getElementById('left-char').src = 'img/maddison.jpg'
         document.getElementById('right-char').src = 'img/ernest.jpg'
         document.getElementById('left-char-name').innerHTML = 'MADDISON'
     }
-    else if (count >= 8) {
-        document.getElementById('scene').src = 'img/murder-spot.png';
+    else if (count >= 18) {
+        document.getElementById('scene').src = 'img/asylum.jpg';
         document.getElementById('left-char').src = 'img/cecil.jpg'
         document.getElementById('right-char').src = 'img/ernest.jpg'
         document.getElementById('left-char-name').innerHTML = 'CECIL'
+        document.getElementById('hoverChange').innerHTML = `<img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">`
+    
+    }
+    //hover starts from 11 and end at 18 after reach 18 asylum pic should shown and before 11 also asylum pic
+    else if (count >= 11) {
+        document.getElementById('scene').src = 'img/asylum.jpg';
+        document.getElementById('left-char').src = 'img/cecil.jpg'
+        document.getElementById('right-char').src = 'img/ernest.jpg'
+        document.getElementById('left-char-name').innerHTML = 'CECIL'
+        document.getElementById('hoverChange').innerHTML = `
+        
+            
+                <img src="./img/hover2.png" alt="wastebin" srcset="">
+            
+        
+        `
+    }
+    else if (count >= 8) {
+        document.getElementById('scene').src = 'img/asylum.jpg';
+        document.getElementById('left-char').src = 'img/cecil.jpg'
+        document.getElementById('right-char').src = 'img/ernest.jpg'
+        document.getElementById('left-char-name').innerHTML = 'CECIL'
+        document.getElementById('hoverChange').innerHTML = `
+        
+        <img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">
+        
+        `
     }
     else if (count >= 2) {
-        if(count == 2){
-        document.getElementById("scene-script").style.opacity = 1
-        document.getElementById(
-          "scene-script"
-        ).innerHTML = `After the preliminary examination of the bodies, they were sent to Dr.Jim for autopsy.
+        if (count == 2) {
+            document.getElementById("scene-script").style.opacity = 1
+            document.getElementById(
+                "scene-script"
+            ).innerHTML = `After the preliminary examination of the bodies, they were sent to Dr.Jim for autopsy.
         After some time, Jim comes out of the examination room to share the result with Ernest.`;
-       }
+        }
     }
     // else if (count >= 0) {
     //     if(count == 0){
@@ -256,12 +170,12 @@ function display() {
     //    }
     // }
     else if (count >= 0) {
-        if(count == 0){
+        if (count == 0) {
             document.getElementById("scene-script").style.opacity = 1
             document.getElementById(
-              "scene-script"
+                "scene-script"
             ).innerHTML = `Dr. Jim’s private autopsy centre . Dr.Jim served in the army for British air force and after his retirement he tied up with private and public agencies for autopsy related consultations.`;
-           }
+        }
         document.getElementById('left-char').src = 'img/doctor.jpg'
         document.getElementById('right-char').src = 'img/ernest.jpg'
         document.getElementById('scene').src = 'img/clinic.jpg';
