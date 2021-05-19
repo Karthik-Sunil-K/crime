@@ -174,9 +174,30 @@ function display() {
     scene = document.getElementById('scene').src;
     document.getElementById('count').innerHTML = count;
     var char2 = document.getElementById('char-2-name');
+   
 if(count >= 42){
     document.getElementById('right-char').src = `img/max.png`;
     char2.innerHTML = 'MAX';
+
+    if(count == 46){
+        document.getElementById('scene-script').style.display = 'block';
+        document.getElementById('scene-script').innerHTML = `
+        Without warning blood surged out of his nose, mouth and ears.
+At once Cecil ran to his aid, but his efforts were in vain.
+Cecil checked Max’s pulse.
+        
+        `
+    }else if (count == 47){
+        document.getElementById('scene-script').style.display = 'none';
+
+        document.getElementById('right-char').src = `img/char1.jpg`;
+        char2.innerHTML = 'CECIL';
+    }
+    else{
+        document.getElementById('scene-script').style.display = 'none';
+    }
+    
+
 }
 else if(count >= 41){
     document.getElementById('right-char').src = `img/reed.jpg`;
@@ -186,7 +207,7 @@ else if(count >= 41){
 }
     else if (count == 40) {
 
-
+document.getElementById('scene-script').style.display = 'none';
         document.getElementById('prev').disabled = true;
 
     }
@@ -194,12 +215,30 @@ else if(count >= 41){
         document.getElementById('prev').style.display = 'inline-block';
         document.getElementById('prev').disabled = false;
 
+        if(count == 38){
+        document.getElementById('scene-script').style.display = 'block';
+
+        }
+        else{
+        document.getElementById('scene-script').style.display = 'none';
+
+        }
+
 
     }
     else if (count >= 33) {
 
+
         document.getElementById('prev').style.display = 'inline-block';
+        document.getElementById('scene-script').style.display = 'none';
+
         document.getElementById('prev').disabled = false;
+
+        if(count == 33){
+
+        document.getElementById('scene-script').style.display = 'block';
+
+        }
 
         if (count == 36) {
 
@@ -211,11 +250,13 @@ else if(count >= 41){
             document.getElementById('prev').style.display = 'none';
 
 
+
         }
 
 
     }
     else if (count > 26) {
+        content.style.display = 'none';
         document.getElementById('prev').style.display = 'none';
       
         if (count == 28) {
@@ -224,9 +265,14 @@ else if(count >= 41){
             count = 39;
         }
         else if (count >= 30 && count < 32) {
-
             document.getElementById('prev').style.display = 'inline-block';
             document.getElementById('prev').disabled = false;
+            if(count == 30){
+                document.getElementById('scene-script').display = 'block';
+            }else{
+        document.getElementById('scene-script').style.display = 'none';
+
+            }
 
             if (count == 31) {
                 count = 39;
@@ -234,7 +280,9 @@ else if(count >= 41){
 
         }
 
+
     }
+    
     else if (count == 26) {
         content.style.display = 'block';
         document.getElementById('next').style.display = 'none';
@@ -274,7 +322,7 @@ else if(count >= 41){
             sceneOuter.innerHTML = `
     
     <img src="img/survillence.png" alt="" class="img-fluid" id="scene">
-    <div id="scene-script" class = 'text-transform mx-auto'>hello this is nyc</div>
+    <div id="scene-script" class = 'text-transform mx-auto'>ernst and cecil figuring out the suspect</div>
 
     <div class="row mx-auto">
       <div class="col-12 mx-auto mt-4 pt-2 text-center">
@@ -287,6 +335,8 @@ else if(count >= 41){
     
     `
             count = 32;
+        
+
 
         })
 
@@ -297,7 +347,7 @@ else if(count >= 41){
             sceneOuter.innerHTML = `
         
         <img src="img/staffroom.jpg" alt="" class="img-fluid" id="scene">
-        <div id="scene-script" class = 'text-transform mx-auto'>hello this is nyc</div>
+        <div id="scene-script" class = 'text-transform mx-auto'>ernst and cecil figuring out the suspect</div>
 
         <div class="row mx-auto">
           <div class="col-12 mx-auto mt-4 pt-2 text-center">
@@ -321,7 +371,7 @@ else if(count >= 41){
             sceneOuter.innerHTML = `
             
             <img src="img/survillence.png" alt="" class="img-fluid" id="scene">
-        <div id="scene-script" class = 'text-transform mx-auto'>hello this is nyc</div>
+        <div id="scene-script" class = 'text-transform mx-auto'>ernst and cecil figuring out the suspect</div>
 
             <div class="row mx-auto">
               <div class="col-12 mx-auto mt-4 pt-2 text-center">
@@ -346,7 +396,7 @@ else if(count >= 41){
             sceneOuter.innerHTML = `
                 
                 <img src="img/survillence.png" alt="" class="img-fluid" id="scene">
-        <div id="scene-script" class = 'text-transform mx-auto'>hello this is nyc</div>
+        <div id="scene-script" class = 'text-transform mx-auto'>ernst and cecil figuring out the suspect</div>
 
                 <div class="row mx-auto">
                   <div class="col-12 mx-auto mt-4 pt-2 text-center">
@@ -360,13 +410,17 @@ else if(count >= 41){
                 `
             count = 26;
 
+
         })
+
+        
 
     }
  
     else if (count >= 25) {
         document.getElementById('right-char').src = 'img/cecil.jpg';
         char2.innerHTML = `CECIL`;
+
       if(count == 25){
         document.getElementById('next').style.display = 'inline-block';
         content.style.display = 'none';
@@ -471,6 +525,15 @@ else if(count >= 41){
             // content.style.visibility = 'hidden';
             content.style.display = 'none';
 
+        }
+    }else if (count >= 0){
+        content.innerHTML = `Murder of two patients in the Lake Tower Asylum. Assumed that
+        the patients might have struck each other in the head. No other
+        involvement is reported yet.`
+        content.style.display = `block`;
+
+        if(count == 1){
+            content.style.display = `none`;
         }
     }
     else {

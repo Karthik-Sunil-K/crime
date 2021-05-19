@@ -56,7 +56,10 @@ body{
    margin-right:10px;
 }
 
-
+input{
+    background:#121212;
+    
+}
 
 .tooltip-left, .tooltip-right{
     border-radius: 5px;
