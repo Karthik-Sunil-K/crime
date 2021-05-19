@@ -510,6 +510,7 @@ document.getElementById('scene-script').style.display = 'none';
 
             content.style.display = 'none';
         }
+     
 
     } else if (count >= 2) {
         document.getElementById('scene').src = 'img/backyard.jpg';
@@ -526,6 +527,10 @@ document.getElementById('scene-script').style.display = 'none';
             content.style.display = 'none';
 
         }
+        if(count == 3){
+            document.getElementById('scene').src = 'img/asylumentry.png';
+                
+            }
     }else if (count >= 0){
         content.innerHTML = `Murder of two patients in the Lake Tower Asylum. Assumed that
         the patients might have struck each other in the head. No other
