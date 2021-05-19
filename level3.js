@@ -80,7 +80,7 @@ BOY?`,
   //Old man to Reed and cecil
   //Old man to reed
   [
-    `RIGHT…. PLEASE LOOK AFTER HIM, I WILL BRING SOME WATER.
+    `
 `,
     ``,
   ],
@@ -138,7 +138,7 @@ DECODE THE CONTENT.`,
     `AGREED.`,
   ],
 ];
-var count = -1;
+var count = 10;
 
 
 var left = document.getElementById("left-dialogue");
@@ -235,9 +235,9 @@ footage from Maddison.`;
 spots a tent made of old sheets. He grabs a torch and enters the tent. He
 caught sight of some sticky notes and old newspaper cuttings in the tent
 `;
-    document.getElementById("left-char").src = "./img/oldman.jpg";
-    document.getElementById("left-caption").innerHTML = "OLDMAN";
-    document.getElementById("right-char").src = "img/reed.jpg";
+    document.getElementById("left-char").src = "./img/cecil.jpg";
+    document.getElementById("left-caption").innerHTML = "AGENT REED";
+    document.getElementById("right-char").src = "img/cecil.jpg";
     document.getElementById("right-caption").innerHTML = "AGENT REED";
   }
     // adding task 4
@@ -261,9 +261,16 @@ caught sight of some sticky notes and old newspaper cuttings in the tent
    
     document.getElementById("scene-script").style.opacity = 1;
 
-    document.getElementById('scene-script').innerHTML = `Reed gets a can of water and pour it on the head of the old guy.`
+    document.getElementById('scene-script').innerHTML = `Reed gets a can of water and pour it on the head of the old guy.`;
+    document.getElementById("left-char").src = "./img/oldman.jpg";
+    document.getElementById("left-caption").innerHTML = "OLDMAN";
+    document.getElementById("right-char").src = "img/reed.jpg";
+    document.getElementById("right-caption").innerHTML = "AGENT REED";
   }
   else if (count == 17) {
+    document.getElementById(
+      "scene-script"
+    ).innerHTML = `Reed shows him his card.`;
     document.getElementById("left-char").src = "./img/oldman.jpg";
     document.getElementById("left-caption").innerHTML = "OLDMAN";
     document.getElementById("right-char").src = "img/cecil.jpg";
@@ -275,10 +282,24 @@ caught sight of some sticky notes and old newspaper cuttings in the tent
     document.getElementById("left-caption").innerHTML = "OLDMAN";
     document.getElementById("right-char").src = "img/reed.jpg";
     document.getElementById("right-caption").innerHTML = "REED";
+    document.getElementById("scene").style.height = "100%";
+    document.getElementById("scene").style.width = "100%";
+    document.getElementById("scene").style.marginLeft = "0%";
+
   } else if (count == 21) {
+    //document.getElementById("scene-outer").style.display = block;
+    //document.getElementById("scene-outer").style.textAlign = center;
+    document.getElementById("scene").style.marginLeft = '25%';
+    document.getElementById("scene").style.height = '50%';
+    document.getElementById("scene").style.width = '50%';
+  
     document.getElementById("scene").src = "./img/scribblle.gif";
 
   } else if (count == 22) {
+    document.getElementById("scene").style.marginLeft = "0%";
+
+    document.getElementById("scene").style.height = "100%";
+    document.getElementById("scene").style.width = "100%";
     document.getElementById("scene").src = "img/street.jpg";
     document.getElementById("left-char").src = "./img/oldman.jpg";
     document.getElementById("left-caption").innerHTML = "OLDMAN";
