@@ -248,7 +248,6 @@ caught sight of some sticky notes and old newspaper cuttings in the tent
                                                           <div id="hoverChange">
                                                             <div class="evidence mb-3">
                                                               <img src="./img/Level3 hover3.png" alt="book" srcset="">
-                                                                <div id="scene-script" class = 'text-transform mx-auto'>Task 4</div>
                                                             </div>
                                                           </div>
                                                           <button class='btn' id = 'prev' onclick="bwd()"><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev</button>
