@@ -101,7 +101,9 @@ body{
     height:100px;
 }
 
-
+#scene-outer:hover #scene-script{
+    background-color:transparent;
+}
 
 @keyframes navfull{
     from{

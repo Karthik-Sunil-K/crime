@@ -1,6 +1,6 @@
 var dialogue = [
 
-    // dialogue1 by ernst and dialogue 2 by cecil
+    // dialogue1 by Ernest and dialogue 2 by cecil
     [`SO...WHAT DO YOU THINK?`, `NOTHING SOLID YET, LET’S SCOUT THE AREA FIRST.`],
     [`ALRIGHT AMIGO, LET'S GO.`, ``],
     // scene changes to backyard
@@ -24,7 +24,7 @@ var dialogue = [
 
     // murder spot--clue must be provided
 
-    // ernst and agent reed speaks out
+    // Ernest and agent reed speaks out
     // dialogue 1 ernest dialogue 2 cecil here #8 reed
     [`YOUR OBSERVATIONS WERE ABSOLUTELY
     CORRECT.HEY REED, COULD YOU PLEASE BRING
@@ -59,7 +59,7 @@ var dialogue = [
     TOO HEARD THAT FREAKING SOUND . I WENT THROUGH ALL THE
     CAMERAS AND FOUND THAT THE 4TH ONE WAS NOT FUNCTIONING.`],
     [`WHAT WAS ITS STATUS BEFORE THAT ?`, `PERFECTLY WORKING...`],
-    // dialogue 1 ernst dialogue 2 max #18
+    // dialogue 1 Ernest dialogue 2 max #18
     [`HEY.. WHERE’S YOUR STAFF TAG?`, `I THINK I FORGOT TO TAKE IT . AAAHM... I’M MAX POTTERFIELD.`],
     [`SO WHAT ABOUT YOU MAX ? WHAT DID YOU SEE?`, `I WAS ON THE THIRD FLOOR IN THE STOREROOM DOING MY JOB .
     I TRIED TO GET OUT OF THERE WHEN I HEARD THE NOISE BUT I
@@ -71,7 +71,7 @@ var dialogue = [
     [`HEY MAX! RELAX, DON’T STRESS YOURSELF TOO MUCH.`, `IF YOU LET ME, I WANT TO TAKE MY PILLS.`],
     [`OF COURSE YOU CAN.`, ``],
 
-    // dialogue 1 ernst dialogue 2 david #23
+    // dialogue 1 Ernest dialogue 2 david #23
     [`DAVID BELL... SO, I EXPECT YOU MIGHT HAVE SEEN SOMETHING
     THE OTHERS DIDN’T . TELL ME!`, `I WAS DOWNSTAIRS NEAR THE SECURITY GUARD’S BUILDING. BUT AS I
     WAS ON MY WAY , THE AGITATED PATIENTS ATTACKED ME FROM
@@ -81,7 +81,7 @@ var dialogue = [
     [`WHAT DO YOU THINK ? WHO IS IT?`, ``],
     [``, ``],
     // 27 rubbenbrown as suspect
-    // dialogue 1 ernst dialogue 2 cecil
+    // dialogue 1 Ernest dialogue 2 cecil
     [`WHAT! WHY HIM? IT’S PRETTY EVIDENT THAT HE WAS IN THE PATIENT
     WARD AND THERE ARE NO PSYCHOLOGICAL LOOPHOLES.`, `I THINK IT’S RUBEN BROWN!`],
     [` HIS EYE
@@ -90,7 +90,7 @@ var dialogue = [
     [``, ``],
 
     // 30 maddison as suspect
-    // dialogue 1 ernst dialogue 2 cecil
+    // dialogue 1 Ernest dialogue 2 cecil
 
     [`WHAT! WHY HER ? IT’S PRETTY EVIDENT THAT SHE WAS IN THE
     SURVEILLANCE ROOM.`, `I THINK IT’S MADDISON ASHWELL!`],
@@ -109,14 +109,14 @@ var dialogue = [
     SUPPOSE THINGS DIDN’T GO SMOOTHLY AS
     PLANNED,
     `, ``],
-    // 37 dialogue 1 ernst dialogue 2 cecil
+    // 37 dialogue 1 Ernest dialogue 2 cecil
     [` DAVID’S PRESENCE MIGHT HAVE
     INTERRUPTED THEM MOREOVER DAVID’S
     PULSE RATE WAS NORMAL HE WASN’T
     LYING.`, ``],
     [``, ``],
 
-    // 39 david as suspect dialogue 1 ernst dialogue 2 cecil
+    // 39 david as suspect dialogue 1 Ernest dialogue 2 cecil
     [`YOU MADE A TOUGH CALL. IT’S TRUE THAT HE WAS NEAR TO THE
     SPOT.`, `I THINK IT’S DAVID`],
     [`BUT THAT DOESN’T PROVE THAT HE’S THE CULPRIT.
@@ -127,10 +127,10 @@ var dialogue = [
     // #breakpoint for jumb2
     [`I GOT SOMEONE’S BROKEN TAG
     FROM THE SPOT. YEAH! IT’S MAX!!`, ``],
-    // 42 dialogue 1 ernst dialogue 2 cecil
+    // 42 dialogue 1 Ernest dialogue 2 cecil
     [`REED... TAKE MAX DOWNSTAIRS!`, `SURE. AFTER YOU, SIR.`],
 
-    // #43  42 variable count = 42 dialogue 1 ernst dialogue 2 max
+    // #43  42 variable count = 42 dialogue 1 Ernest dialogue 2 max
     [`HEY MAX! YOU NEED TO TELL US EVERYTHING. THE TRUTH THIS TIME.
     DID YOU KILL THEM ? WHY DID YOU KILL THEM ? WHO HIRED YOU ?
     WHO’S THAT GHOSTLY GUY ? IS THAT GUY YOUR BOSS? IS THIS PART
@@ -153,7 +153,7 @@ var dialogue = [
     TRIGGERED THE PATIENTS ?`, `HE BUILT THEM… NOW HE’S DEMOLISHING THEM . THE ARMY IS GOING TO
     DIE`],
 
-    // dialogue 1 ernst dialogue 2 cecil
+    // dialogue 1 Ernest dialogue 2 cecil
     [``, `HE’S DEAD!`]
 
 
@@ -322,7 +322,7 @@ document.getElementById('scene-script').style.display = 'none';
             sceneOuter.innerHTML = `
     
     <img src="img/survillence.png" alt="" class="img-fluid" id="scene">
-    <div id="scene-script" class = 'text-transform mx-auto'>ernst and cecil figuring out the suspect</div>
+    <div id="scene-script" class = 'text-transform mx-auto'>Ernest and Cecil figuring out the suspect</div>
 
     <div class="row mx-auto">
       <div class="col-12 mx-auto mt-4 pt-2 text-center">
@@ -347,7 +347,7 @@ document.getElementById('scene-script').style.display = 'none';
             sceneOuter.innerHTML = `
         
         <img src="img/staffroom.jpg" alt="" class="img-fluid" id="scene">
-        <div id="scene-script" class = 'text-transform mx-auto'>ernst and cecil figuring out the suspect</div>
+        <div id="scene-script" class = 'text-transform mx-auto'>Ernest and cecil figuring out the suspect</div>
 
         <div class="row mx-auto">
           <div class="col-12 mx-auto mt-4 pt-2 text-center">
@@ -371,7 +371,7 @@ document.getElementById('scene-script').style.display = 'none';
             sceneOuter.innerHTML = `
             
             <img src="img/survillence.png" alt="" class="img-fluid" id="scene">
-        <div id="scene-script" class = 'text-transform mx-auto'>ernst and cecil figuring out the suspect</div>
+        <div id="scene-script" class = 'text-transform mx-auto'>Ernest and cecil figuring out the suspect</div>
 
             <div class="row mx-auto">
               <div class="col-12 mx-auto mt-4 pt-2 text-center">
@@ -396,7 +396,7 @@ document.getElementById('scene-script').style.display = 'none';
             sceneOuter.innerHTML = `
                 
                 <img src="img/survillence.png" alt="" class="img-fluid" id="scene">
-        <div id="scene-script" class = 'text-transform mx-auto'>ernst and cecil figuring out the suspect</div>
+        <div id="scene-script" class = 'text-transform mx-auto'>Ernest and cecil figuring out the suspect</div>
 
                 <div class="row mx-auto">
                   <div class="col-12 mx-auto mt-4 pt-2 text-center">
