@@ -84,6 +84,7 @@ BOY?`,
 `,
     ``,
   ],
+  [``,``],
   [
     `WHO THE HELL ARE YOU GUYS?
 `,
@@ -240,37 +241,54 @@ caught sight of some sticky notes and old newspaper cuttings in the tent
     document.getElementById("right-caption").innerHTML = "AGENT REED";
   }
   else if (count == 15) {
-  document.getElementById("scene-script").style.opacity = 1;
+    document.getElementById(
+      "scene-outer"
+    ).innerHTML = `<div class="row mx-auto">
+                                                        <div class="col-12 mx-auto mt-4 pt-2 text-center">
+                                                          <div id="hoverChange">
+                                                            <div class="evidence mb-3">
+                                                              <img src="./img/Level3 hover3.png" alt="book" srcset="">
+                                                                <div id="scene-script" class = 'text-transform mx-auto'>Task 4</div>
+                                                            </div>
+                                                          </div>
+                                                          <button class='btn' id = 'prev' onclick="bwd()"><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev</button>
+                                                          <button class='btn' id = 'next' onclick="fwd()">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                                                        </div>
+                                                      </div>`;
+  }
+  else if (count == 16) {
+   
+    document.getElementById("scene-script").style.opacity = 1;
 
     document.getElementById('scene-script').innerHTML = `Reed gets a can of water and pour it on the head of the old guy.`
   }
-  else if (count == 16) {
+  else if (count == 17) {
     document.getElementById("left-char").src = "./img/oldman.jpg";
     document.getElementById("left-caption").innerHTML = "OLDMAN";
     document.getElementById("right-char").src = "img/cecil.jpg";
     document.getElementById("right-caption").innerHTML = "CECIL";
   }
-  else if (count == 19) {
+  else if (count == 20) {
     document.getElementById("scene").src = "./img/street.jpg";
     document.getElementById("left-char").src = "./img/oldman.jpg";
     document.getElementById("left-caption").innerHTML = "OLDMAN";
     document.getElementById("right-char").src = "img/reed.jpg";
     document.getElementById("right-caption").innerHTML = "REED";
-  } else if (count == 20) {
+  } else if (count == 21) {
     document.getElementById("scene").src = "./img/scribblle.gif";
 
-  } else if (count == 21) {
+  } else if (count == 22) {
     document.getElementById("scene").src = "img/street.jpg";
     document.getElementById("left-char").src = "./img/oldman.jpg";
     document.getElementById("left-caption").innerHTML = "OLDMAN";
     document.getElementById("right-char").src = "img/cecil.jpg";
     document.getElementById("right-caption").innerHTML = "CECIL";
-  } else if (count == 22) {
+  } else if (count == 23) {
     document.getElementById("left-char").src = "./img/reed.jpg";
     document.getElementById("left-caption").innerHTML = "AGENT REED";
     document.getElementById("right-char").src = "img/cecil.jpg";
     document.getElementById("right-caption").innerHTML = "CECIL";
-  } else if (count == 23) {
+  } else if (count == 24) {
     document.getElementById("scene-script").style.opacity = 1;
 
     document.getElementById(
@@ -280,12 +298,12 @@ caught sight of some sticky notes and old newspaper cuttings in the tent
     document.getElementById("left-caption").innerHTML = "OLDMAN";
     document.getElementById("right-char").src = "img/cecil.jpg";
     document.getElementById("right-caption").innerHTML = "CECIL";
-  } else if (count == 24) {
+  } else if (count == 25) {
     document.getElementById("left-char").src = "./img/reed.jpg";
     document.getElementById("left-caption").innerHTML = "AGENT REED";
     document.getElementById("right-char").src = "img/cecil.jpg";
     document.getElementById("right-caption").innerHTML = "CECIL";
-  } else if (count == 25) {
+  } else if (count == 26) {
     document.getElementById("scene-script").style.opacity = 1;
 
     document.getElementById(
@@ -300,6 +318,20 @@ Jackson!`;
 function fwd() {
   console.log(count);
   count = count + 1;
+  if (count == 16) {
+     document.getElementById(
+       "scene-outer"
+     ).innerHTML = `<img src="img/street.jpg" alt="" class="img-fluid" id="scene">
+                    <div id="scene-script" class = 'text-transform mx-auto'>hello this is nyc</div>
+        <div class="row mx-auto">
+          <div class="col-12 mx-auto mt-4 pt-2 text-center">
+              <button class='btn' id = 'prev' onclick="bwd();"><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev</button>
+              <button class='btn' onclick="fwd();">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+        
+        
+          </div>
+        </div>`;
+  }
   display();
 }
 
@@ -307,7 +339,19 @@ function bwd() {
     if (count < -1) {
         count = 0;
     }
-    count = count - 1;
+  count = count - 1;
+  if (count == 14) {
+    document.getElementById(
+      "scene-outer"
+    ).innerHTML = `<img src="img/street.jpg" alt="" class="img-fluid" id="scene">
+                    <div id="scene-script" class = 'text-transform mx-auto'>hello this is nyc</div>
+                      <div class="row mx-auto">
+                        <div class="col-12 mx-auto mt-4 pt-2 text-center">
+                          <button class='btn' id = 'prev' onclick="bwd();"><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev</button>
+                            <button class='btn' onclick="fwd();">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                          </div>
+                      </div>`;
+  }
     display();
 }
 
