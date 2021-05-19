@@ -13,10 +13,10 @@ body{
 }
 
 
-.scene{
+/* .scene{
     height: 350px;
     
-}
+} */
 #heading{
     color:rgb(241, 8, 66);
 }
@@ -47,6 +47,8 @@ body{
     opacity:0.9;
     border-radius:10px;
     font-weight:700;
+    width:90%;
+
     
 }
 .scene .btn{
@@ -56,10 +58,6 @@ body{
    margin-right:10px;
 }
 
-input{
-    background:#121212;
-    
-}
 
 .tooltip-left, .tooltip-right{
     border-radius: 5px;
@@ -145,3 +143,12 @@ width:100%;
     }
     
 } */
+
+
+@media  screen and (max-width:400px) {
+
+    .container-fluid{
+        height:max-content;
+    }
+    
+}
