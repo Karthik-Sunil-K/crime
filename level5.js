@@ -318,7 +318,7 @@ function display() {
     
     else if (count >= 16) {
         document.getElementById('right-char').src = 'img/char1.jpg';
-        document.getElementById('scene').src = 'img/eastviewInner.jpg';
+        document.getElementById('scene').src = 'img/erastviewNew.jpg';
         char2.innerHTML = `CECIL`;
         if(count == 16){
             content.innerHTML = ` Suddenly
@@ -337,7 +337,7 @@ function display() {
         
     }
     else if (count >= 15) {
-        document.getElementById('scene').src = 'img/eastview.jpg';
+        document.getElementById('scene').src = 'img/eastViewouter.jpg';
         if(count == 15){
             content.innerHTML = `Ernest and Cecil reach the location mentioned in the card. They analyze the
             surroundings. Serene atmosphere. The neighborhood seems to be deserted.
@@ -442,7 +442,7 @@ function display() {
     //     }
     // }
     else if (count >= 0) {
-        document.getElementById('scene').src = 'img/earnesthouse.jpg'
+        document.getElementById('scene').src = 'img/ernesthouseNew.jpg'
     }
     else {
         document.getElementById('scene').src = 'img/earnesthouse.jpg';
