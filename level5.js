@@ -99,7 +99,7 @@ LEGENDARY CODES AND NOW WE’RE SUPPOSED TO KILL THEM.
 `],
 
 //dialogue 1 by cecil dialogue 2 by the final guy
-[`SO...JAKE,MAX,HARRY,STEVE AND JACKSON WERE IN THIS GROUP?`, `YEAH. THEY WERE SUPPOSED TO BE OUR MESSENGERS.
+[`SO...JAKE,MAX,HARRY,STEVE AND JONATHAN WERE IN THIS GROUP?`, `YEAH. THEY WERE SUPPOSED TO BE OUR MESSENGERS.
 `],
 
 // dialogue 1 ernst dialogue 2 final guy
@@ -345,7 +345,7 @@ function display() {
             at them. Ernest walks in and tries the handle of the door. To their surprise the
             door was unlocked. Ernest smirks at Cecil. Withoutfurther delay, Ernest
             enters the house. Cecil follows him. But as he enters, he starts to hear the
-            screaming voices again in his head.‘’JAKE...MAX....HARRY...STEVE...JACKSON…’’ Cecil loses his control.`;
+            screaming voices again in his head.‘’JAKE...MAX....HARRY...STEVE...JONATHAN…’’ Cecil loses his control.`;
             content.style.display = 'block';
         }else{
             // content.style.visibility = 'hidden';
@@ -366,7 +366,7 @@ function display() {
             at them. Ernest walks in and tries the handle of the door. To their surprise the
             door was unlocked. Ernest smirks at Cecil. Withoutfurther delay, Ernest
             enters the house. Cecil follows him. But as he enters, he starts to hear the
-            screaming voices again in his head.‘’JAKE...MAX....HARRY...STEVE...JACKSON…’’ Cecil loses his control.
+            screaming voices again in his head.‘’JAKE...MAX....HARRY...STEVE...JONATHAN…’’ Cecil loses his control.
             `;
             content.style.display = 'block';
         char2.innerHTML = `CECIL`;
