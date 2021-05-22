@@ -137,6 +137,7 @@ DECODE THE CONTENT.`,
 `,
     `AGREED.`,
   ],
+  [``,``]
 ];
 var count = -1;
 
@@ -334,6 +335,9 @@ caught sight of some sticky notes and old newspaper cuttings in the tent
 They arrive at the destination. On arriving they notice people crowded at the
 park. Reed and Cecil walk over to the spot. They see the dead body of
 Jackson!`;
+  }
+  else if (count == 27){
+    document.getElementById('scene-script').innerHTML = `<h3 class = 'text-center mx-auto '>END OF LEVEL 3</h3>`
   }
 }
 
