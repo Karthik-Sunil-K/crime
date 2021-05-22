@@ -8,15 +8,15 @@ body{
 
 .container-fluid{
     width: 100vw;
-    height: 100vh;
-    overflow:hidden;
+    min-height: 100vh;
+    overflow-x:hidden;
 }
 
 
-#scene{
+/* #scene{
     height: 350px;
     
-}
+} */
 
 /* .scene img{
     display:block;
@@ -24,6 +24,11 @@ body{
     height:250px;
 
 } */
+
+.security-card{
+    height: 132px;
+    width:102px;
+}
 #heading{
     color:rgb(241, 8, 66);
 }

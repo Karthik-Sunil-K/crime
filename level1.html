@@ -12,34 +12,6 @@
   <link rel="stylesheet" href="style.css">
 <title>Crime Scene</title>
 </head>
-
-<style>
-    .evidence{
-
-        height:47vmin;
-        width:100%;
-        background-color:gainsboro;
-        background-image:url(img/Level3\ hover2.png);
-        background-position:center;
-        background-repeat:no-repeat;
-        background-size:cover;
-        position:relative;
-
-    }
-    .evidence img{
-        height:19vmin;
-        width:auto;
-        border:none;
-        position:absolute;
-        display:block;
-        bottom:0;
-        left:10vmin;
-    }
-    .evidence img:hover{
-        opacity:0;
-    }
-</style>
-
 <body>
 
   
@@ -50,7 +22,7 @@
 
     <div class="row mx-auto">
       <div class="col-10 mt-3 mx-auto">
-        <h4 class = 'text-capitalize mx-auto text-center' id = 'heading'><span id = 'count'></span>unravel the mystery</h4>
+        <h4 class = 'text-capitalize mx-auto text-center' id = 'heading'><span id = 'count'></span>&nbsp;unravel the mystery</h4>
       </div>
     </div>
     <div class="row story-container mt-5">
@@ -77,19 +49,23 @@
         <img src="img/char2.jpg" alt="" class="card-img-top  img-fluid character-pic mx-auto" id="left-char">
 
           <div class="card-body">
-            <h4 class="card-title text-center" id="left-caption">ERNST</h4>
+            <h4 class="card-title text-center">ERNEST</h4>
           </div>
         </div>
       </div>
 
 
       <div class="col-lg-6 my-auto scene" id = 'scene-outer'>
-        <img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">
-        <div id="scene-script" class = 'text-transform mx-auto'>LEVEL-3</div>
+        <div id="hoverChange">
+          <img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">
+        <div id="scene-script" class = 'text-transform mx-auto'>Murder of two patients in the Lake Tower Asylum. Assumed that
+          the patients might have struck each other in the head. No other
+          involvement is reported yet.</div>
+        </div>
         <div class="row mx-auto">
           <div class="col-12 mx-auto mt-4 pt-2 text-center">
-              <button class='btn' id = 'prev' onclick="bwd();"><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev</button>
-              <button class='btn' onclick="fwd();">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+              <button class='btn' id = 'prev' onclick="bwd()"><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev</button>
+              <button class='btn' id = 'next' onclick="fwd()">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
         
         
           </div>
@@ -119,7 +95,7 @@
         <img src="img/char1.jpg" alt="" class="card-img-top  img-fluid character-pic mx-auto" id="right-char">
 
           <div class="card-body">
-            <h4 class="card-title text-center" id = 'right-caption'>CECIL</h4>
+            <h4 class="card-title text-center" id = 'char-2-name'>CECIL</h4>
           </div>
         </div>
       </div>
@@ -165,9 +141,10 @@
       mousewheel: true,
     });
   </script>
-  <script src="./level3.js"></script>
+  <script src="./level1.js"></script>
 
 
 
 </body>
 </html>
+

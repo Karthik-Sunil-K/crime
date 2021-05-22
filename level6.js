@@ -8,8 +8,8 @@ var conv1=[
 // pop up as per his instincts.
 
    // Cecil
-    "WHAT’S UP? BIEN.",
-    "ESTOY",
+    "WHAT’S UP?",
+    "ESTOY BIEN.",
     "ARE YOU WORRIED ABOUT ME?",
     "HELL YEAH. HOW CAN I PRETEND TO BE HAPPY WHEN ONE OF US IS IN DANGER. I WANT YOU TO BE SAFE.",
     "YEAH, THE FEELING'S MUTUAL",

@@ -202,6 +202,7 @@ footage from Maddison.`;
     document.getElementById("right-caption").innerHTML = "AGENT REED";
   } else if (count == 6) {
     document.getElementById("scene-script").style.opacity = 1;
+    document.getElementById('scene').src = `img/policestation.jpg`;
 
     document.getElementById(
       "scene-script"
@@ -211,13 +212,25 @@ footage from Maddison.`;
     document.getElementById("left-caption").innerHTML = "Reed";
     document.getElementById("right-char").src = "img/cecil.jpg";
     document.getElementById("right-caption").innerHTML = "CECIL";
-  } else if (count == 8) {
+  }else if(count == 7){
+    document.getElementById('scene').src = `img/jake-security-card.jpg`;
+  } 
+  
+  else if (count == 8) {
     document.getElementById("scene-script").style.opacity = 1;
+    document.getElementById('scene').src = `img/policestation.jpg`;
 
     document.getElementById(
       "scene-script"
     ).innerHTML = `Reed gets a call over his phone. After the call.`;
-  } else if (count == 12) {
+  }else if(count == 11){
+    document.getElementById('scene').src = `img/policestation.jpg`;
+    document.getElementById('right-char').src  = `img/char1.jpg`;
+    document.getElementById("right-caption").innerHTML = "CECIL";
+    
+
+  } 
+  else if (count == 12) {
     document.getElementById("scene-script").style.opacity = 1;
 
     document.getElementById(
@@ -357,13 +370,13 @@ They arrive at the destination. On arriving they notice people crowded at the
 park. Reed and Cecil walk over to the spot. They see the dead body of
 Jackson!`;
   } else if (count == 29) {
-    document.getElementById("scene").src = "img/cs-board.jpg";
+    document.getElementById("scene").src = "img/jon-security-card.jpg";
 
     document.getElementById("scene-script").style.opacity = 1;
 
     document.getElementById(
       "scene-script"
-    ).innerHTML = `END OF LEVEL 4`;
+    ).innerHTML = `<h3 class = 'text-center text-capitalize'>END OF THE LEVEL 3</h3>`;
   }
   }
 //}
