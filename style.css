@@ -7,8 +7,8 @@ body{
 }
 
 .container-fluid{
-    width: fit-content;
-    height:fit-content;
+    width: 100vw;
+    height: 100vh;
     overflow:hidden;
 }
 

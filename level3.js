@@ -289,9 +289,9 @@ caught sight of some sticky notes and old newspaper cuttings in the tent
   } else if (count == 21) {
     //document.getElementById("scene-outer").style.display = block;
     //document.getElementById("scene-outer").style.textAlign = center;
-    document.getElementById("scene").style.marginLeft = '25%';
-    document.getElementById("scene").style.height = '50%';
-    document.getElementById("scene").style.width = '50%';
+    //document.getElementById("scene").style.marginLeft = '25%';
+    //document.getElementById("scene").style.height = '50%';
+    //document.getElementById("scene").style.width = '50%';
   
     document.getElementById("scene").src = "./img/scribblle.gif";
 
