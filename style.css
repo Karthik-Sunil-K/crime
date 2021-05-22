@@ -13,9 +13,16 @@ body{
 }
 
 
-/* .scene{
+#scene{
     height: 350px;
     
+}
+
+/* .scene img{
+    display:block;
+
+    height:250px;
+
 } */
 #heading{
     color:rgb(241, 8, 66);

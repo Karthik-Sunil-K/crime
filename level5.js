@@ -1,5 +1,5 @@
 var dialogue = [
-// dialogue1 by ernst and dialogue 2 by cecil
+// dialogue1 by ernest and dialogue 2 by cecil
 [`BUENOS DIAS AMIGO. HOW ARE YOU FEELING NOW?`, `FINE... HEY WHY ARE THESE WINDOWS COVERED?`],
 [`SO, YOU DON’T REMEMBER ANYTHING?`, `I DO...BUT THINGS ARE VAGUE. I CAN’T KEEP MY MIND IN CONTROL`],
 
@@ -102,7 +102,7 @@ LEGENDARY CODES AND NOW WE’RE SUPPOSED TO KILL THEM.
 [`SO...JAKE,MAX,HARRY,STEVE AND JONATHAN WERE IN THIS GROUP?`, `YEAH. THEY WERE SUPPOSED TO BE OUR MESSENGERS.
 `],
 
-// dialogue 1 ernst dialogue 2 final guy
+// dialogue 1 ernest dialogue 2 final guy
 [`WHY DID THEY TAKE THE MEDICINAL MIX THEMSELVES, WHEN THEY KNEW
 THAT IT COULD KILL THEM.?`, `ONCE THEY COMMIT SINS, THEY CAN’T ESCAPE FROM THE HANDS OF OUR
 MIGHTY GODDESS ATHENA. SO THEY SHOULD END THEIR LIFE
@@ -125,7 +125,8 @@ SIX MONTHS. I CHANGED THE MIX. YOU CAN DREAM ABOUT IT ALL DAY,
 BUT YOU'RE NOT GONNA DIE.
 `,`YOU NAILED IT!!!`],
 
-['ONE OF US IS THE NEXT TARGET!','ONE OF US IS THE NEXT TARGET!']
+['ONE OF US IS THE NEXT TARGET!','ONE OF US IS THE NEXT TARGET!'],
+[``, ``]
 
 //ERNEST AND CECIL LEAVE THE PLACE. THEY THINK ABOUT THE RECENT
 //EVENTS AND RECOLLECTS ALL THAT HAS HAPPENED SINCE THE FIRST
@@ -153,128 +154,13 @@ function display() {
         var char2 = document.getElementById('char-2-name');
         var char1 = document.getElementById('char-1-name');
     
-  
+  if(count == 28){
 
-    // if(count == 27 || count == 30 || count == 33 || count == 38 || count == 40 ){
-      
-    //     document.getElementById('prev').style.display = 'none';
-    // }else if(count == 29 || count == 32){
-        
-    //     count = 39;
-    //     document.getElementById('prev').style.display = 'inline-block';
+    document.getElementById('scene-script').innerHTML = `<h3 class = 'text-center text-capitalize'>END OF LEVEL 5</h3>`
 
-    // }else if(count == 36){
-       
-    //     count = 41;
-    //     document.getElementById('prev').style.display = 'inline-block';
-    // }
-    // else{
-    //     document.getElementById('prev').style.display = 'inline-block';
-    // }
-  //  if(count == 40){
-        
-
-  //  document.getElementById('prev').disabled = true;
-
-  //  }
-//else if(count >= 38){
-    //document.getElementById('prev').style.display = 'inline-block';
-    //document.getElementById('prev').disabled = false;
+  }
 
 
-//}
-//else if(count >= 33){
-
- //   document.getElementById('prev').style.display = 'inline-block';
- //   document.getElementById('prev').disabled = false;
-
- //   if(count == 36){
-
-  //      count = 39;
-
- //   }
-
-  /// if(count == 37){
-   // document.getElementById('prev').style.display = 'none';
-
-  //  }
-
-
-//}
-//else if(count > 26){
-  //  document.getElementById('prev').style.display = 'none';
- //   if(count == 28){
-  //      document.getElementById('prev').style.display = 'inline-block';
-  //      document.getElementById('prev').disabled = true;
-  //      count = 39;
-  //  }
-  //  else if(count >= 30 && count <32 ){
-
-  //  document.getElementById('prev').style.display = 'inline-block';
-  //  document.getElementById('prev').disabled = false;
-
- //  if(count == 31){
- //       count = 39;
- //   }
-
- //   }
-
-//}
-    if (count == 28) {
-       // content.style.display = 'block';
-        document.getElementById('next').style.display = 'none';
-        
-
-        content.innerHTML = `
-        <div class = 'row mx-auto'>
-        <div class = 'col-12 mx-auto'>
-
-        <h4 class = 'text-center text-capitalize'>who it can be ?</h4>
-        </div>
-        </div>
-
-
-        <div class = 'row mx-auto'>
-        <div class = 'col-12 mx-auto'>
-
-        <span>the final guy: <input type="checkbox" name="the final guy" id="the final guy"></span><br>
-       
-
-        </div>
-
-        </div>`
-
-
-        var  Dialogue = document.getElementById('max');
-       // var davidDialogue = document.getElementById('david');
-      //  var madDialogue = document.getElementById('maddison');
-      //  var rubDialogue = document.getElementById('rubben');
-       // var sceneOuter = document.getElementById('scene-outer');
-        maxDialogue.addEventListener("click", function () {
-
-
-
-           sceneOuter.innerHTML = `
-    
-    <img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">
-    <div id="scene-script" class = 'text-transform mx-auto'>hello this is nyc</div>
-
-    <div class="row mx-auto">
-      <div class="col-12 mx-auto mt-4 pt-2 text-center">
-          <button class='btn'id = 'prev' onclick="bwd()" disabled><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev</button>
-          <button class='btn' onclick="fwd()">Next <i class="fa fa-arrow-right"  aria-hidden="true"></i></button>
-    
-    
-      </div>
-    </div>
-    
-    `
-           
-            count = 26;
-
-        })
-
-    }
     else if (count >= 27) {
         document.getElementById('scene').src = 'img/eastview.jpg';
         if(count == 27){
@@ -293,16 +179,32 @@ function display() {
         document.getElementById('right-char').src = 'img/char2.jpg';
         char2.innerHTML = `ERNEST`;
         content.style.display = 'none';
-    }
-    else if(count == 25){
-        char2.innerHTML = `CHRIS HENRY`;   
-        document.getElementById('next').style.display = 'inline-block';
-        content.style.display = 'none';
+        document.getElementById('left-char').src = 'img/char1.jpg';
+        char1.innerHTML = `CECIL`;
+        if(count == 26){
+        document.getElementById('scene').src = 'img/erastviewNew.jpg';
+
+        }
+
 
     }
+
     else if (count >= 23) {
     // alert(`count ${count}`)
         char2.innerHTML = `CHRIS HENRY`;
+        char1.innerHTML = `ERNEST`;
+        document.getElementById('left-char').src = 'img/char2.jpg';
+
+        if(count == 25){
+            char2.innerHTML = `CHRIS HENRY`; 
+            document.getElementById('right-char').src = 'img/chris.jpg';
+
+            document.getElementById('next').style.display = 'inline-block';
+            content.style.display = 'none';
+    
+    
+        }
+
     }
     else if(count >= 22){
         document.getElementById('left-char').src = 'img/char1.jpg';
@@ -313,6 +215,12 @@ function display() {
     else if (count >= 18) {
         document.getElementById('right-char').src = 'img/chris.jpg';
         char2.innerHTML = `CHRIS HENRY`;
+        if(count == 21){
+        document.getElementById('left-char').src = 'img/char2.jpg';
+        char1.innerHTML = `ERNEST`;   
+
+
+        }
 
     }
     
@@ -355,10 +263,12 @@ function display() {
     }
     else if (count >= 14) {
         document.getElementById('right-char').src = 'img/char1.jpg';
+        document.getElementById('scene').src = 'img/earnesthouse.jpg';
+
         // document.getElementById('scene').src = 'final.jpg';
         content.style.display = 'none';
             char2.innerHTML = `CECIL`;
-        document.getElementById('right-char').src = 'img/char1.jpg';
+        // document.getElementById('right-char').src = 'img/char1.jpg';
         if(count == 15){
             content.innerHTML = `Ernest and Cecil reach the location mentioned in the card. They analyze the
             surroundings. Serene atmosphere. The neighborhood seems to be deserted.
@@ -386,6 +296,8 @@ function display() {
             content.style.display = 'block';
         char2.innerHTML = `CECIL`;
         document.getElementById('right-char').src = 'img/char1.jpg';
+        document.getElementById('scene-script').style.display = 'none';
+
        // document.getElementById('scene').src = 'img/murder-spot.png';
 
 
@@ -410,6 +322,8 @@ function display() {
         content.style.display  = 'block';
         char2.innerHTML = `CECIL`;
         document.getElementById('right-char').src = 'img/char1.jpg';
+        document.getElementById('scene-script').style.display = 'none';
+
 
 
     }
@@ -419,30 +333,21 @@ function display() {
         if(count == 4){
            // content.innerHTML = ``;
             content.style.display = 'block';
+        document.getElementById('scene-script').style.display = 'none';
+
         }else{
             // content.style.visibility = 'hidden';
 
             content.style.display = 'none';
         }
     }
+   else if(count >= 2){
+        document.getElementById('scene-script').style.display = 'none';
+    }
 
-    // } else if (count >= 2) {
-    //     document.getElementById('scene').src = 'img/backyard.jpg';
-    //     char2.innerHTML = `CECIL`;
-
-    //     if(count == 2){
-    //       //  content.innerHTML = ``
-    //         // content.style.visibility = `visible`;
-    //         content.style.display = 'block';
-
-    //     }else{
-    //         // content.style.visibility = 'hidden';
-    //         content.style.display = 'none';
-
-    //     }
-    // }
     else if (count >= 0) {
         document.getElementById('scene').src = 'img/ernesthouseNew.jpg'
+
     }
     else {
         document.getElementById('scene').src = 'img/earnesthouse.jpg';

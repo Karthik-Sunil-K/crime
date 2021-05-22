@@ -333,7 +333,7 @@ document.getElementById('scene-script').style.display = 'none';
 
             sceneOuter.innerHTML = `
     
-    <img src="img/survillence.png" alt="" class="img-fluid" id="scene">
+    <img src="img/murder-spot.png" alt="" class="img-fluid" id="scene">
     <div id="scene-script" class = 'text-transform mx-auto'>Ernest and Cecil figuring out the suspect</div>
 
     <div class="row mx-auto">
@@ -382,7 +382,7 @@ document.getElementById('scene-script').style.display = 'none';
 
             sceneOuter.innerHTML = `
             
-            <img src="img/survillence.png" alt="" class="img-fluid" id="scene">
+            <img src="img/murder-spot.png" alt="" class="img-fluid" id="scene">
         <div id="scene-script" class = 'text-transform mx-auto'>Ernest and cecil figuring out the suspect</div>
 
             <div class="row mx-auto">
@@ -407,7 +407,7 @@ document.getElementById('scene-script').style.display = 'none';
 
             sceneOuter.innerHTML = `
                 
-                <img src="img/survillence.png" alt="" class="img-fluid" id="scene">
+                <img src="img/murder-spot.png" alt="" class="img-fluid" id="scene">
         <div id="scene-script" class = 'text-transform mx-auto'>Ernest and cecil figuring out the suspect</div>
 
                 <div class="row mx-auto">
@@ -443,27 +443,33 @@ document.getElementById('scene-script').style.display = 'none';
         // alert(`count ${count}`)
 
         document.getElementById('right-char').src = 'img/david.png';
+        document.getElementById('scene').src = 'img/sr-david.jpg';
+
         char2.innerHTML = `DAVID`;
 
 
     }
     else if (count >= 18) {
         document.getElementById('right-char').src = 'img/max.png';
+        document.getElementById('scene').src = 'img/sr-max.jpg';
+
         char2.innerHTML = `MAX`;
 
     }
     else if (count >= 16) {
         document.getElementById('right-char').src = 'img/maddison.png';
+        document.getElementById('scene').src = 'img/sr-maddison.jpg';
+
         char2.innerHTML = `MADDISON`;
 
 
     }
     else if (count >= 14) {
         document.getElementById('right-char').src = 'img/ruben.png';
-        document.getElementById('scene').src = 'img/staffroom.png';
+        document.getElementById('scene').src = 'img/sr-ruben.jpg';
         content.style.display = 'none';
         char2.innerHTML = `RUBEN`;
-        document.getElementById('right-char').src = 'img/ruben.png';
+        // document.getElementById('right-char').src = 'img/ruben.png';
 
 
 
