@@ -74,7 +74,12 @@ function display() {
     document.getElementById("scene-script").style.opacity = 0;
 
     if(count == 29){
-        alert('count exceeded');
+    document.getElementById("scene-script").style.opacity = 1;
+
+        document.getElementById(
+            "scene-script"
+        ).innerHTML = `<h3 class = 'text-capitalize mx-auto text-center'>END OF LEVEL 2</h3>`;
+
     }
     else if (count == 28) {
         // alert(`count ${count}`)

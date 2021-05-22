@@ -187,6 +187,7 @@ if(count >= 42){
 if(count == 48){
     document.getElementById('scene-script').style.display = 'block';
     char2.innerHTML = 'CECIL';
+    document.getElementById('right-char').src = `img/char1.jpg`;
 
     document.getElementById('scene-script').innerHTML = `<h3 class = "text-center">END OF LEVEL ONE</h3>`;
 }
