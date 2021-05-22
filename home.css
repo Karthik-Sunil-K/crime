@@ -8,13 +8,41 @@
 
 html,body{
     scroll-behavior: smooth;
-    background:#060606;
-    /* font-family: 'Rowdies', cursive; */
+    background: rgb(2, 3, 48);
+    color: aliceblue;
+    font-family: 'Special Elite', cursive;
 }
 
 .container-fluid{
     height:fit-content;
     width:fit-content;
-    background: #060606;
+    background: rgb(2, 3, 48);
 overflow:hidden;
+}
+
+#our-team { padding: 3rem 0; }
+#our-team img {
+    height: 420px;
+    object-fit: cover;
+}
+#our-team i { transition: opacity .2s; }
+#our-team i:hover { opacity: .5; }
+#our-team .card > div {
+    background-color: rgba(30, 30, 30, .7);
+    transform: translateX(-100%);
+    transition: transform .35s;
+}
+#our-team .card:hover > div { transform: translateX(0); }
+
+#our-team .para{
+    line-height: 2rem;
+    font-size: 1.3rem;
+}
+
+.nav-item {
+    padding: 0 25px;
+    font-weight: bold;
+}
+.nav-link:hover{
+    opacity: 0.6;
 }
