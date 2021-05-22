@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 body{
+
     padding: 0;
     margin: 0;
     box-sizing: border-box;
    position:relative;
-    background: #060606;
+    background: rgb(2, 3, 48);
+    font-family: 'Special Elite', cursive;
 }
 
 .container-fluid{
@@ -41,7 +44,7 @@ body{
     left:50%;
     transform:translate(-50%, -50%);
     color:rgb(241, 8, 66);
-    background-color:#121212;
+    background-color:rgb(2, 3, 48);
     padding:10px;
     border:2px solid rgb(241, 8, 66);
     opacity:0.9;
@@ -52,7 +55,7 @@ body{
     
 }
 .scene .btn{
-   background-color:#121212;
+   background-color:rgb(2, 3, 48);
    border:2px solid rgb(241, 8, 66);
    color:rgb(241, 8, 66);
    margin-right:10px;
@@ -61,14 +64,14 @@ body{
 
 .tooltip-left, .tooltip-right{
     border-radius: 5px;
-    background: #121212;
+    background: rgb(2, 3, 48);
     color:#fff;
     border:2px solid rgb(241, 8, 66);
     height:150px;
 }
 
 .card{
-    background-color:#060606;
+    background-color:rgb(2, 3, 48);
     color:rgb(241, 8, 66);
     
 }
@@ -91,7 +94,7 @@ body{
 #nav .btn{
     text-decoration:none;
     color:rgb(241, 8, 66);
-    background-color: #121212;
+    background-color: rgb(2, 3, 48);
     border:2px solid rgb(241, 8, 66);
     
 }
