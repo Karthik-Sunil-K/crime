@@ -84,7 +84,7 @@ BOY?`,
 `,
     ``,
   ],
-  [``,``],
+  [``, ``],
   [
     `WHO THE HELL ARE YOU GUYS?
 `,
@@ -126,6 +126,12 @@ DON’T CHECK IT. FIND IT IF YOU CAN. THERE WILL BE MORE OF THEM.
   [`SO.. WHAT ARE WE WAITING FOR?`, `I GOT ONE MORE THING TO DO`],
   //Old man to cecil
   [`YOU TOUCHED HIS STUFFS?`, `WHY? DID HE CAST SOME SPELLS IN IT?`],
+  [
+    ``,
+    `I GOT A PART OF ITS COVER FROM THE ASYLUM. I’M SURE IT’S THE SAME
+BOOK. BUT THE THING IS THIS WHOLE STUFF IS ON BRAILLE SCRIPT.
+`,
+  ],
   //Reed to Cecil
   [
     `WHAT ABOUT THE AUTHOR?`,
@@ -137,6 +143,7 @@ DECODE THE CONTENT.`,
 `,
     `AGREED.`,
   ],
+  [``,``]
 ];
 var count = -1;
 
@@ -249,6 +256,7 @@ caught sight of some sticky notes and old newspaper cuttings in the tent
                                                           <div id="hoverChange">
                                                             <div class="evidence mb-3">
                                                               <img src="./img/Level3 hover3.png" alt="book" srcset="">
+                                                                <div id="scene-script" class = 'text-transform mx-auto'>TASK 4: Find where Jonathan has gone</div>
                                                             </div>
                                                           </div>
                                                           <button class='btn' id = 'prev' onclick="bwd()"><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev</button>
@@ -287,13 +295,14 @@ caught sight of some sticky notes and old newspaper cuttings in the tent
     document.getElementById("scene").style.marginLeft = "0%";
 
   } else if (count == 21) {
+    document.getElementById("scene").src = "./img/scribblle.gif";
+
     //document.getElementById("scene-outer").style.display = block;
     //document.getElementById("scene-outer").style.textAlign = center;
     //document.getElementById("scene").style.marginLeft = '25%';
     //document.getElementById("scene").style.height = '50%';
     //document.getElementById("scene").style.width = '50%';
   
-    document.getElementById("scene").src = "./img/scribblle.gif";
 
   } else if (count == 22) {
     document.getElementById("scene").style.marginLeft = "0%";
@@ -321,11 +330,31 @@ caught sight of some sticky notes and old newspaper cuttings in the tent
     document.getElementById("right-char").src = "img/cecil.jpg";
     document.getElementById("right-caption").innerHTML = "CECIL";
   } else if (count == 25) {
+    //document.getElementById("scene-script").style.opacity = 1;
+
+    //document.getElementById(
+      //"scene-script"
+    //).innerHTML = `Cecil shows the book to Reed.... Cecil and Reed smiles/smirks at the old man.`;
+
+    document.getElementById("left-char").src = "./img/oldman.jpg";
+    document.getElementById("left-caption").innerHTML = "OLDMAN";
+    document.getElementById("right-char").src = "img/cecil.jpg";
+    document.getElementById("right-caption").innerHTML = "CECIL";
+  } else if (count == 26) {
     document.getElementById("left-char").src = "./img/reed.jpg";
     document.getElementById("left-caption").innerHTML = "AGENT REED";
     document.getElementById("right-char").src = "img/cecil.jpg";
     document.getElementById("right-caption").innerHTML = "CECIL";
-  } else if (count == 26) {
+  } else if (count == 27) {
+    document.getElementById("scene").src = "img/street.jpg";
+    document.getElementById("left-char").src = "./img/reed.jpg";
+    document.getElementById("left-caption").innerHTML = "AGENT REED";
+    document.getElementById("right-char").src = "img/cecil.jpg";
+    document.getElementById("right-caption").innerHTML = "CECIL";
+  }
+  else if (count == 28) {
+    document.getElementById("scene").src = "img/cs-board.jpg";
+    
     document.getElementById("scene-script").style.opacity = 1;
 
     document.getElementById(
@@ -334,8 +363,10 @@ caught sight of some sticky notes and old newspaper cuttings in the tent
 They arrive at the destination. On arriving they notice people crowded at the
 park. Reed and Cecil walk over to the spot. They see the dead body of
 Jackson!`;
+    
   }
-}
+  }
+//}
 
 function fwd() {
   console.log(count);
@@ -373,6 +404,9 @@ function bwd() {
                             <button class='btn' onclick="fwd();">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
                           </div>
                       </div>`;
+  }
+  if (count == 27) {
+    
   }
     display();
 }
