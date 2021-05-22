@@ -3,7 +3,7 @@ var dialogue = [
     // .After some time, Jim comes out of the examination room to share theresult with Ernest.
     [`Ernest... This a Kind of Strange...Both of them Are Struck Each Other At The Same Postion`, ``],
     [`The Eighth Cranial Nerve That Connects The Brain And The Ear To be Specific`, ``],
-    ['AND I\'m Not Sure Why They Removed The Flesh From The Ear', 'Ahaah!'],
+    ['AND I\'m Not Sure Why They Removed The Flesh From The Brain', 'Ahaah!'],
     // scene changes to backyard
     [`IT’S REALLY GROSS , EVEN FOR ME ! I NOTICED BLOOD STAINS FROM THEIR EARS . BUT CAN’T TELL YOU THE EXACT DETAILS`, `WE MUST HAVE MISSED SOMETHING.`],
 
@@ -31,8 +31,8 @@ var dialogue = [
     ['', 'A 19Hz CHIP… AM I OUT OF MIND? LET ME TELL YOU WHAT HAPPENED OVER HERE'],
     ['', 'LAST NIGHT, AFTER THE FIRE ALARM WAS TRIGGERED BY MAX THE THIRD PATIENT LET OTHERS FREE. AT THIS TIME OUR BAD BOY CAME THROUGH THE BACKYARD . HE CUT THE FENCE IN AN IRREGULAR WAY '],
     ['', ' IT STILL NEEDS TO BE CONNECTED . AFTER THAT MAX BRINGS THOSE PATIENTS OVER HERE . EITHER MAX OR HIS BOSS CONTROLLED THIS CHIP THAT WAS ALREADY INSIDE THEIR DAMN HEAD .'],
-    ['', ' THIS CHIP EMITS HIGH FREQUENCY WAVES SINCE IT WAS CONNECTED TO THE 8TH CRANIAL NERVE WHICH LEADS TO PHYSICAL INSTABILITY . AND LATER MAYBE IT TRIGGERED THEM SOMEHOW'],
-    ['', 'THEN EPIC CLIMAX, ONE HIT… ALL DONE .  AFTER THAT HE BROKE THEIR SKULL AND TRIED TAKING THOSE CHIPS. HE MUST HAVE HIDTHE CHIPS HERE AND SCRAMMED WHEN HE NOTICED  DAVID APPROACHING. '],
+    ['', ' THIS CHIP EMITS LOW FREQUENCY WAVES SINCE IT WAS CONNECTED TO THE 8TH CRANIAL NERVE WHICH LEADS TO PHYSICAL INSTABILITY . AND LATER MAYBE IT TRIGGERED THEM SOMEHOW'],
+    ['', 'THEN EPIC CLIMAX, ONE HIT… ALL DONE .  AFTER THAT HE BROKE THEIR SKULL AND TRIED TAKING THOSE CHIPS. HE MUST HAVE HID THE CHIPS HERE AND SCRAMMED WHEN HE NOTICED  DAVID APPROACHING. '],
     ['', 'SEE.. I HATE THIS WORK… HE’S NOT SYSTEMATIC!'],
 
 
@@ -41,7 +41,7 @@ var dialogue = [
     ['', 'WHAT’S THE OTHER ONE?'],
     ['I THINK IT MUST BE A LEATHER COVER OF SOME BOOK .', 'WHAT’S THE OTHER ONE?'],
     ['', 'LET ME HAVE A LOOK AT IT.'],
-    ['', '“CODE OF...” WHATEVER IT IS , A RIPPED BOOK COVER...HAAHAA'],
+    ['', '“ARYAN...” WHATEVER IT IS , A RIPPED BOOK COVER...HAAHAA'],
     ['I THINK IT MIGHT BE USEFUL.', 'SI SI.'],
     //madison enters first person maddison#25
     ['SIR I THINK THERE’S SOMETHING YOU REALLY NEED TO SEE', 'OOH! OKAAY...'],
@@ -74,7 +74,12 @@ function display() {
     document.getElementById("scene-script").style.opacity = 0;
 
     if(count == 29){
-        alert('count exceeded');
+    document.getElementById("scene-script").style.opacity = 1;
+
+        document.getElementById(
+            "scene-script"
+        ).innerHTML = `<h3 class = 'text-capitalize mx-auto text-center'>END OF LEVEL 2</h3>`;
+
     }
     else if (count == 28) {
         // alert(`count ${count}`)

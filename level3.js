@@ -143,6 +143,7 @@ DECODE THE CONTENT.`,
 `,
     `AGREED.`,
   ],
+  [``, ``],
   [``,``]
 ];
 var count = -1;
@@ -168,7 +169,7 @@ function display() {
   document.getElementById("scene-script").style.opacity = 0;
 
   if (count == 0) {
-  document.getElementById("scene-script").style.opacity = 1;
+    document.getElementById("scene-script").style.opacity = 1;
     document.getElementById(
       "scene-script"
     ).innerHTML = `They play the video footage again and again. They ask for a copy of the
@@ -178,7 +179,7 @@ footage from Maddison.`;
     document.getElementById("right-char").src = "img/ernest.jpg";
     document.getElementById("right-caption").innerHTML = "ERNEST";
   } else if (count == 4) {
-  document.getElementById("scene-script").style.opacity = 1;
+    document.getElementById("scene-script").style.opacity = 1;
 
     document.getElementById(
       "scene-script"
@@ -188,37 +189,36 @@ footage from Maddison.`;
     document.getElementById("right-char").src = "img/cecil.jpg";
     document.getElementById("right-caption").innerHTML = "CECIL";
   } else if (count == 5) {
-  document.getElementById("scene-script").style.opacity = 1;
+    document.getElementById("scene-script").style.opacity = 1;
 
     document.getElementById(
       "scene-script"
     ).innerHTML = `Cecil hands over the footage to Reed.`;
-    
+
     document.getElementById("scene").src = "img/policestation.jpg";
     document.getElementById("left-char").src = "./img/cecil.jpg";
     document.getElementById("left-caption").innerHTML = "CECIL";
     document.getElementById("right-char").src = "img/reed.jpg";
     document.getElementById("right-caption").innerHTML = "AGENT REED";
   } else if (count == 6) {
-  document.getElementById("scene-script").style.opacity = 1;
+    document.getElementById("scene-script").style.opacity = 1;
 
     document.getElementById(
       "scene-script"
     ).innerHTML = `Reed forwards the video to the cyber council. Later`;
-    
+
     document.getElementById("left-char").src = "./img/reed.jpg";
     document.getElementById("left-caption").innerHTML = "Reed";
     document.getElementById("right-char").src = "img/cecil.jpg";
     document.getElementById("right-caption").innerHTML = "CECIL";
-  }
-  else if (count == 8) {
-  document.getElementById("scene-script").style.opacity = 1;
+  } else if (count == 8) {
+    document.getElementById("scene-script").style.opacity = 1;
 
-   document.getElementById(
-     "scene-script"
-   ).innerHTML = `Reed gets a call over his phone. After the call.`;
+    document.getElementById(
+      "scene-script"
+    ).innerHTML = `Reed gets a call over his phone. After the call.`;
   } else if (count == 12) {
-  document.getElementById("scene-script").style.opacity = 1;
+    document.getElementById("scene-script").style.opacity = 1;
 
     document.getElementById(
       "scene-script"
@@ -234,7 +234,7 @@ footage from Maddison.`;
     document.getElementById("right-char").src = "img/reed.jpg";
     document.getElementById("right-caption").innerHTML = "AGENT REED";
   } else if (count == 14) {
-  document.getElementById("scene-script").style.opacity = 1;
+    document.getElementById("scene-script").style.opacity = 1;
 
     document.getElementById(
       "scene-script"
@@ -243,11 +243,11 @@ spots a tent made of old sheets. He grabs a torch and enters the tent. He
 caught sight of some sticky notes and old newspaper cuttings in the tent
 `;
     document.getElementById("left-char").src = "./img/cecil.jpg";
-    document.getElementById("left-caption").innerHTML = "AGENT REED";
+    document.getElementById("left-caption").innerHTML = "CECIL";
     document.getElementById("right-char").src = "img/cecil.jpg";
-    document.getElementById("right-caption").innerHTML = "AGENT REED";
+    document.getElementById("right-caption").innerHTML = "CECIL";
   }
-    // adding task 4
+  // adding task 4
   else if (count == 15) {
     document.getElementById(
       "scene-outer"
@@ -263,19 +263,17 @@ caught sight of some sticky notes and old newspaper cuttings in the tent
                                                           <button class='btn' id = 'next' onclick="fwd()">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
                                                         </div>
                                                       </div>`;
-  }
-    
-  else if (count == 16) {
-   
+  } else if (count == 16) {
     document.getElementById("scene-script").style.opacity = 1;
 
-    document.getElementById('scene-script').innerHTML = `Reed gets a can of water and pour it on the head of the old guy.`;
+    document.getElementById(
+      "scene-script"
+    ).innerHTML = `Reed gets a can of water and pour it on the head of the old guy.`;
     document.getElementById("left-char").src = "./img/oldman.jpg";
     document.getElementById("left-caption").innerHTML = "OLDMAN";
     document.getElementById("right-char").src = "img/reed.jpg";
     document.getElementById("right-caption").innerHTML = "AGENT REED";
-  }
-  else if (count == 17) {
+  } else if (count == 17) {
     document.getElementById(
       "scene-script"
     ).innerHTML = `Reed shows him his card.`;
@@ -283,8 +281,7 @@ caught sight of some sticky notes and old newspaper cuttings in the tent
     document.getElementById("left-caption").innerHTML = "OLDMAN";
     document.getElementById("right-char").src = "img/cecil.jpg";
     document.getElementById("right-caption").innerHTML = "CECIL";
-  }
-  else if (count == 20) {
+  } else if (count == 20) {
     document.getElementById("scene").src = "./img/street.jpg";
     document.getElementById("left-char").src = "./img/oldman.jpg";
     document.getElementById("left-caption").innerHTML = "OLDMAN";
@@ -293,7 +290,6 @@ caught sight of some sticky notes and old newspaper cuttings in the tent
     document.getElementById("scene").style.height = "100%";
     document.getElementById("scene").style.width = "100%";
     document.getElementById("scene").style.marginLeft = "0%";
-
   } else if (count == 21) {
     document.getElementById("scene").src = "./img/scribblle.gif";
 
@@ -302,8 +298,6 @@ caught sight of some sticky notes and old newspaper cuttings in the tent
     //document.getElementById("scene").style.marginLeft = '25%';
     //document.getElementById("scene").style.height = '50%';
     //document.getElementById("scene").style.width = '50%';
-  
-
   } else if (count == 22) {
     document.getElementById("scene").style.marginLeft = "0%";
 
@@ -333,7 +327,7 @@ caught sight of some sticky notes and old newspaper cuttings in the tent
     //document.getElementById("scene-script").style.opacity = 1;
 
     //document.getElementById(
-      //"scene-script"
+    //"scene-script"
     //).innerHTML = `Cecil shows the book to Reed.... Cecil and Reed smiles/smirks at the old man.`;
 
     document.getElementById("left-char").src = "./img/oldman.jpg";
@@ -351,10 +345,9 @@ caught sight of some sticky notes and old newspaper cuttings in the tent
     document.getElementById("left-caption").innerHTML = "AGENT REED";
     document.getElementById("right-char").src = "img/cecil.jpg";
     document.getElementById("right-caption").innerHTML = "CECIL";
-  }
-  else if (count == 28) {
+  } else if (count == 28) {
     document.getElementById("scene").src = "img/cs-board.jpg";
-    
+
     document.getElementById("scene-script").style.opacity = 1;
 
     document.getElementById(
@@ -363,7 +356,14 @@ caught sight of some sticky notes and old newspaper cuttings in the tent
 They arrive at the destination. On arriving they notice people crowded at the
 park. Reed and Cecil walk over to the spot. They see the dead body of
 Jackson!`;
-    
+  } else if (count == 29) {
+    document.getElementById("scene").src = "img/cs-board.jpg";
+
+    document.getElementById("scene-script").style.opacity = 1;
+
+    document.getElementById(
+      "scene-script"
+    ).innerHTML = `END OF LEVEL 4`;
   }
   }
 //}

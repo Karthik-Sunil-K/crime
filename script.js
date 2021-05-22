@@ -134,10 +134,10 @@ var dialogue = [
     [`HEY MAX! YOU NEED TO TELL US EVERYTHING. THE TRUTH THIS TIME.
     DID YOU KILL THEM ? WHY DID YOU KILL THEM ? WHO HIRED YOU ?
     WHO’S THAT GHOSTLY GUY ? IS THAT GUY YOUR BOSS? IS THIS PART
-    OF SOMETHING BIG ?`, 'he is silent.......................'],
+    OF SOMETHING BIG ?`, ''],
 
     [`OH CHICO I HATE SILENCE. I DON’T WANT TO GET ANYTHING
-    WRONG..OR DO YOU WANT ME TO CLEAR EVERYTHING?`, 'really'],
+    WRONG..OR DO YOU WANT ME TO CLEAR EVERYTHING?`, ''],
 
     [`MAX , YOU WERE ON THE SECOND FLOOR WHEN RUBEN TOOK CHARGE.
     YOU WERE THE ONE WHO LET THE PATIENTS OUT, WEREN’T YOU? YOU
@@ -154,7 +154,10 @@ var dialogue = [
     DIE`],
 
     // dialogue 1 Ernest dialogue 2 cecil
-    [``, `HE’S DEAD!`]
+    [``, `HE’S DEAD!`],
+    [``, ``]
+
+   
 
 
 
@@ -166,6 +169,8 @@ var content = document.getElementById('scene-script');
 var count = -1;
 
 
+
+
 function display() {
 
 
@@ -174,12 +179,19 @@ function display() {
     scene = document.getElementById('scene').src;
     document.getElementById('count').innerHTML = count;
     var char2 = document.getElementById('char-2-name');
-   
+    
+  
 if(count >= 42){
     document.getElementById('right-char').src = `img/max.png`;
     char2.innerHTML = 'MAX';
+if(count == 48){
+    document.getElementById('scene-script').style.display = 'block';
+    char2.innerHTML = 'CECIL';
+    document.getElementById('right-char').src = `img/char1.jpg`;
 
-    if(count == 46){
+    document.getElementById('scene-script').innerHTML = `<h3 class = "text-center">END OF LEVEL ONE</h3>`;
+}
+    else if(count == 46){
         document.getElementById('scene-script').style.display = 'block';
         document.getElementById('scene-script').innerHTML = `
         Without warning blood surged out of his nose, mouth and ears.
@@ -513,7 +525,7 @@ document.getElementById('scene-script').style.display = 'none';
      
 
     } else if (count >= 2) {
-        document.getElementById('scene').src = 'img/backyard.jpg';
+        document.getElementById('scene').src = 'img/back.png';
         char2.innerHTML = `CECIL`;
 
         if (count == 2) {
