@@ -179,9 +179,9 @@ var conv10 =[
     // ERNEST(CONT'D)
     "HEY...CECIL...I’M TALKING TO YOU... YOU NEED TO OVERCOME THIS FEAR. OPEN YOUR EYES. BRING BACK THE LIGHT IN YOU. ",
     " ",
-    " YOU’RE NOT ALONE MY KID. OPEN YOUR EYES! THIS PAIN DOESN’T LAST LONG. OPEN IT... WITH GREAT EFFORT CECIL OPENS HIS EYES. ",
+    " YOU’RE NOT ALONE MY KID. OPEN YOUR EYES! THIS PAIN DOESN’T LAST LONG. OPEN IT... ",
     " ",
-    " HE SCREAMS ONE LAST TIME AND THEN SILENCE PREVAILS. CECIL HAS FINALLY DEFEATED HIS ALTER EGO. HE IS BACK TO HIS TRUE SELF.",
+    " ",
     // CECIL
     "ERNEST... AMIGO…",
     // ERNEST
@@ -237,7 +237,7 @@ var updateScreen=()=>{
 
     console.log(convNo)
 
-    scriptArray=[0 , 14    ,  18   ,  30    ,  42    ,  50   ,  64     , 72   ,  78 ,    84  ,28 ];
+    scriptArray=[0 , 14    ,  18   ,  30    ,  42    ,  50   ,  64     , 72   ,  78 ,    84  ,28  , 88];
 
     if(scriptArray.includes(convNo)){
         scene.style.display="block"
@@ -364,12 +364,20 @@ var updateScreen=()=>{
 
     
     }else if(convNo < setLength[9]){
+
         updateScene("”JAKE...MAX...HARRY...STEVE...JONATHAN...” THE VOICES RETURN. CECIL FALLS TO THE FLOOR SCREAMING WITH HIS HANDS ON HIS HEAD. HE FEELS A SUDDEN RUSH OF ADRENALINE.");
         updateDialog(conv10[convNo-setLength[8]],conv10[convNo-setLength[8]+1])
 
         updateChar("ERNEST","CECIL");
         updateSceneImg("img/wharehouse_inside.jpg");
         updateCharImg("img/char2.jpg","img/char1.jpg")
+
+        if(convNo == 88){
+            updateScene("HE SCREAMS ONE LAST TIME AND THEN SILENCE PREVAILS. CECIL HAS FINALLY DEFEATED HIS ALTER EGO. HE IS BACK TO HIS TRUE SELF.")
+        }
+        if(convNo == 86){
+            updateScene(" WITH GREAT EFFORT CECIL OPENS HIS EYES.")
+        }
 
     }else{}
 }
