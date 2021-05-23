@@ -1,6 +1,7 @@
 :root{
-    --mainClr: #161b21;
-    --subClr: #f4a950;
+    --mainClr: #1d1b1b;
+    --subClr:  #eb3349;
+
 }
 *{
     padding: 0;
