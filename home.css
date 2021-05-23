@@ -8,7 +8,7 @@
 
 html,body{
     scroll-behavior: smooth;
-    background: rgb(2, 3, 48);
+    background: #121212;
     color: aliceblue;
     font-family: 'Special Elite', cursive;
 }
@@ -16,9 +16,27 @@ html,body{
 .container-fluid{
     height:fit-content;
     width:fit-content;
-    background: rgb(2, 3, 48);
+    background: #000;
 overflow:hidden;
 }
+
+
+.navbar-nav .nav-item .nav-link{
+    color:var(--subClr);
+    padding-left: 20px;
+    padding-right:20px;
+    font-weight:600;
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+
+
+    background-color: orange;
+    border-radius:10px;
+ 
+}
+
+
 
 #our-team { padding: 3rem 0; }
 #our-team img {
