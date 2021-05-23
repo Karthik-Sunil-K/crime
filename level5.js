@@ -254,6 +254,8 @@ function display() {
             char2.innerHTML = `CECIL`;
         // document.getElementById('right-char').src = 'img/char1.jpg';
         if(count == 15){
+        document.getElementById('scene').src = 'img/erastviewNew.jpg';
+
             content.innerHTML = `Ernest and Cecil reach the location mentioned in the card. They analyze the
             surroundings. Serene atmosphere. The neighborhood seems to be deserted.
             They continue their path forward. They notice a person at a distance staring
@@ -265,7 +267,6 @@ function display() {
             content.style.display = 'block';
         char2.innerHTML = `CECIL`;
         document.getElementById('right-char').src = 'img/char1.jpg';
-        document.getElementById('scene').src = 'img/erastviewNew.jpg';
 
       //  document.getElementById('scene').src = 'img/murder-spot.png';
 
