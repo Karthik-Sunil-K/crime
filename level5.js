@@ -255,6 +255,8 @@ function display() {
             enters the house. Cecil follows him. But as he enters, he starts to hear the
             screaming voices again in his head.‘’JAKE...MAX....HARRY...STEVE...JONATHAN…’’ Cecil loses his control.`;
             content.style.display = 'block';
+        document.getElementById('scene').src = 'img/eastViewouter.jpg';
+
         }else{
             // content.style.visibility = 'hidden';
 
