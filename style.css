@@ -211,6 +211,6 @@ width:100%;
         left:50%;
         transform:translate(-50%,0);
         opacity:0.9;
-        overflow-x:scroll;
+        overflow-y:scroll;
     }
 }
