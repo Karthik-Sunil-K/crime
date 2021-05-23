@@ -254,7 +254,7 @@ function display() {
             char2.innerHTML = `CECIL`;
         // document.getElementById('right-char').src = 'img/char1.jpg';
         if(count == 15){
-        document.getElementById('scene').src = 'img/erastviewNew.jpg';
+        document.getElementById('scene').src = 'img/earnesthouse.jpg';
 
             content.innerHTML = `Ernest and Cecil reach the location mentioned in the card. They analyze the
             surroundings. Serene atmosphere. The neighborhood seems to be deserted.
