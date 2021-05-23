@@ -244,25 +244,7 @@ function display() {
         
         
     }
-    else if (count >= 15) {
-        document.getElementById('scene').src = 'img/eastViewouter.jpg';
-        if(count == 15){
-            content.innerHTML = `Ernest and Cecil reach the location mentioned in the card. They analyze the
-            surroundings. Serene atmosphere. The neighborhood seems to be deserted.
-            They continue their path forward. They notice a person at a distance staring
-            at them. Ernest walks in and tries the handle of the door. To their surprise the
-            door was unlocked. Ernest smirks at Cecil. Withoutfurther delay, Ernest
-            enters the house. Cecil follows him. But as he enters, he starts to hear the
-            screaming voices again in his head.‘’JAKE...MAX....HARRY...STEVE...JONATHAN…’’ Cecil loses his control.`;
-            content.style.display = 'block';
-        document.getElementById('scene').src = 'img/eastViewouter.jpg';
-
-        }else{
-            // content.style.visibility = 'hidden';
-
-            content.style.display = 'none';
-        }
-    }
+  
     else if (count >= 14) {
         document.getElementById('right-char').src = 'img/char1.jpg';
         document.getElementById('scene').src = 'img/earnesthouse.jpg';
@@ -283,6 +265,8 @@ function display() {
             content.style.display = 'block';
         char2.innerHTML = `CECIL`;
         document.getElementById('right-char').src = 'img/char1.jpg';
+        document.getElementById('scene').src = 'img/erastviewNew.jpg';
+
       //  document.getElementById('scene').src = 'img/murder-spot.png';
 
         }
