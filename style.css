@@ -146,6 +146,14 @@ html, body{
     background-color:transparent;
 }
 
+#footer{
+    background-color:#121212;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+padding-top:30px;
+padding-bottom:30px;
+}
+
 @keyframes navfull{
     from{
         left:-90%;
