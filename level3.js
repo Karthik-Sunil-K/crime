@@ -365,10 +365,10 @@ caught sight of some sticky notes and old newspaper cuttings in the tent
 
     document.getElementById(
       "scene-script"
-    ).innerHTML = `They head over to St. Michaels Park, the place mentioned in the sticky note.
+    ).innerHTML = `They head over park, the place mentioned in the sticky note.
 They arrive at the destination. On arriving they notice people crowded at the
 park. Reed and Cecil walk over to the spot. They see the dead body of
-Jackson!`;
+Jonathan!`;
   } else if (count == 29) {
     document.getElementById("scene").src = "img/jon-security-card.jpg";
 
