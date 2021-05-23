@@ -428,3 +428,12 @@ var bwd =()=>{
 
 updateScreen();
 
+var nav = document.getElementById("outer-nav");
+nav.addEventListener("mouseenter", function () {
+  var expand = document.getElementById("nav");
+  expand.style.animation = "navfull 2s forwards";
+});
+nav.addEventListener("mouseleave", function () {
+  var expand = document.getElementById("nav");
+  expand.style.animation = "navsmall 2s forwards";
+});
