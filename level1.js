@@ -176,7 +176,7 @@ function display() {
     left.innerHTML = dialogue[count][0].toLowerCase();
     right.innerHTML = dialogue[count][1].toLowerCase();
     scene = document.getElementById('scene').src;
-    document.getElementById('count').innerHTML = count;
+    // document.getElementById('count').innerHTML = count;
     var char2 = document.getElementById('char-2-name');
     
   

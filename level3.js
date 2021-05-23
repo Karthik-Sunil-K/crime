@@ -161,7 +161,7 @@ var right = document.getElementById("right-dialogue");
 function display() {
   left.innerHTML = dialogue[count][0].toLowerCase();
   right.innerHTML = dialogue[count][1].toLowerCase();
-  document.getElementById("count").innerHTML = count;
+  // document.getElementById("count").innerHTML = count;
   var content = document.getElementById("scene-script");
   var char2 = document.getElementById("char-2-name");
 
