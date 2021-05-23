@@ -5,7 +5,7 @@
     position:relative;
 }
 
-body{
+body, .btn{
     color: red;
     background:rgb(2, 3, 48);
     font-size: 1.2rem;

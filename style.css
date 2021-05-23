@@ -1,37 +1,76 @@
-body{
+:root{
+    --mainClr: #161b21;
+    --subClr: #f4a950;
+}
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
    position:relative;
-    background: #060606;
+}
+
+html, body{
+    scroll-behavior: smooth;
+    background-color: var(--mainClr);
 }
 
 .container-fluid{
-    width: 100vw;
-    height: 100vh;
-    overflow:hidden;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x:hidden;
+}
+
+.fas.fa{
+    color:var(--subClr);
+}
+
+.navbar-nav .nav-item .nav-link{
+    color:var(--subClr);
+    padding-left: 20px;
+    padding-right:20px;
+    font-weight:600;
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+
+
+    background-color: var(--subClr);
+    border-radius:10px;
+    color:#121212;
 }
 
 
-/* .scene{
+/* #scene{
     height: 350px;
     
 } */
+
+/* .scene img{
+    display:block;
+
+    height:250px;
+
+} */
+
+.security-card{
+    height: 132px;
+    width:102px;
+}
 #heading{
-    color:rgb(241, 8, 66);
+    color:var(--subClr);
 }
 
 
 .character-pic{
     height:200px;
     width:167px;
-    border:2px solid rgb(241, 8, 66);
+    border:2px solid var(--subClr);
 }
 
 .scene img{
     height: 100%;
     width: 100%;
-    border:2px solid rgb(241, 8, 66);
+    border:2px solid var(--subClr);
     display:block;
 }
 
@@ -40,10 +79,10 @@ body{
     top:50%;
     left:50%;
     transform:translate(-50%, -50%);
-    color:rgb(241, 8, 66);
+    color:var(--subClr);
     background-color:#121212;
     padding:10px;
-    border:2px solid rgb(241, 8, 66);
+    border:2px solid var(--subClr);
     opacity:0.9;
     border-radius:10px;
     font-weight:700;
@@ -53,8 +92,8 @@ body{
 }
 .scene .btn{
    background-color:#121212;
-   border:2px solid rgb(241, 8, 66);
-   color:rgb(241, 8, 66);
+   border:2px solid var(--subClr);
+   color:var(--subClr);
    margin-right:10px;
 }
 
@@ -63,13 +102,13 @@ body{
     border-radius: 5px;
     background: #121212;
     color:#fff;
-    border:2px solid rgb(241, 8, 66);
+    border:2px solid var(--subClr);
     height:150px;
 }
 
 .card{
-    background-color:#060606;
-    color:rgb(241, 8, 66);
+    background-color:var(--mainClr);
+    color:var(--subClr);
     
 }
 .swiper-container {
@@ -90,9 +129,9 @@ body{
   }
 #nav .btn{
     text-decoration:none;
-    color:rgb(241, 8, 66);
+    color:var(--subClr);
     background-color: #121212;
-    border:2px solid rgb(241, 8, 66);
+    border:2px solid var(--subClr);
     
 }
 

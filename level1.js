@@ -6,8 +6,8 @@ var dialogue = [
     // scene changes to backyard
     [`WELL...CECIL..`, `YEAH I KNOW WHAT YOU ARE THINKING. THE MURDERER MIGHT
     HAVE USED THIS PATH.`],
-    [`IT MAKES SENSE ONLY THEN... TAKE THE TWELVE I WILL BE YOUR
-    SIX.`, ``],
+    [``, `IT MAKES SENSE ONLY THEN... TAKE THE TWELVE I WILL BE YOUR
+    SIX.`],
 
     // murder spot
     [``, `DAMN! WHAT IS THIS ALL ABOUT?`],
@@ -33,9 +33,8 @@ var dialogue = [
     [`OHH! I'M DAMN SURE THIS AIN'T HUMAN BLOOD.WHO EVER DID THIS IS
     PRETTY CUNNING.`, `WHAT!!??`],
     [`YEAH! IT’S GETTING COMPLICATED. SEE THE WAY THEIR SKULLS ARE
-    BROKEN. AND LOOK AT THOSE TWO. THEY COULDN'T HAVE LIFTED THE
-    HEAVY WEAPON IF THEY WANTED TO.`, ``],
-    [`STRIKING EACH OTHER IS OUT OF
+    BROKEN. AND LOOK....`, ``],
+    [`STRIKING EACH OTHER, WITH THIS MUCH OF IMPACT IS OUT OF
     THE QUESTION.THERE MUST HAVE BEEN A THIRD PERSON, POSSIBLY
     THE ONE WHO COMMITTED THIS HEINOUS ACT.`, `THAT'S THE CASE , HE WILL NEED AN INSIDER.`],
 
@@ -197,13 +196,18 @@ if(count == 48){
         Without warning blood surged out of his nose, mouth and ears.
 At once Cecil ran to his aid, but his efforts were in vain.
 Cecil checked Max’s pulse.
+
         
         `
+        document.getElementById('scene').src = `img/murder-spot.png`
+
     }else if (count == 47){
         document.getElementById('scene-script').style.display = 'none';
 
         document.getElementById('right-char').src = `img/char1.jpg`;
         char2.innerHTML = 'CECIL';
+        document.getElementById('scene').src = `img/max-security-card.jpg`
+
     }
     else{
         document.getElementById('scene-script').style.display = 'none';
@@ -333,7 +337,7 @@ document.getElementById('scene-script').style.display = 'none';
 
             sceneOuter.innerHTML = `
     
-    <img src="img/survillence.png" alt="" class="img-fluid" id="scene">
+    <img src="img/murder-spot.png" alt="" class="img-fluid" id="scene">
     <div id="scene-script" class = 'text-transform mx-auto'>Ernest and Cecil figuring out the suspect</div>
 
     <div class="row mx-auto">
@@ -382,7 +386,7 @@ document.getElementById('scene-script').style.display = 'none';
 
             sceneOuter.innerHTML = `
             
-            <img src="img/survillence.png" alt="" class="img-fluid" id="scene">
+            <img src="img/murder-spot.png" alt="" class="img-fluid" id="scene">
         <div id="scene-script" class = 'text-transform mx-auto'>Ernest and cecil figuring out the suspect</div>
 
             <div class="row mx-auto">
@@ -407,7 +411,7 @@ document.getElementById('scene-script').style.display = 'none';
 
             sceneOuter.innerHTML = `
                 
-                <img src="img/survillence.png" alt="" class="img-fluid" id="scene">
+                <img src="img/murder-spot.png" alt="" class="img-fluid" id="scene">
         <div id="scene-script" class = 'text-transform mx-auto'>Ernest and cecil figuring out the suspect</div>
 
                 <div class="row mx-auto">
@@ -443,27 +447,33 @@ document.getElementById('scene-script').style.display = 'none';
         // alert(`count ${count}`)
 
         document.getElementById('right-char').src = 'img/david.png';
+        document.getElementById('scene').src = 'img/sr-david.jpg';
+
         char2.innerHTML = `DAVID`;
 
 
     }
     else if (count >= 18) {
         document.getElementById('right-char').src = 'img/max.png';
+        document.getElementById('scene').src = 'img/sr-max.jpg';
+
         char2.innerHTML = `MAX`;
 
     }
     else if (count >= 16) {
         document.getElementById('right-char').src = 'img/maddison.png';
+        document.getElementById('scene').src = 'img/sr-maddison.jpg';
+
         char2.innerHTML = `MADDISON`;
 
 
     }
     else if (count >= 14) {
         document.getElementById('right-char').src = 'img/ruben.png';
-        document.getElementById('scene').src = 'img/staffroom.png';
+        document.getElementById('scene').src = 'img/sr-ruben.jpg';
         content.style.display = 'none';
         char2.innerHTML = `RUBEN`;
-        document.getElementById('right-char').src = 'img/ruben.png';
+        // document.getElementById('right-char').src = 'img/ruben.png';
 
 
 
@@ -503,6 +513,8 @@ document.getElementById('scene-script').style.display = 'none';
         content.style.display = 'block';
         char2.innerHTML = `CECIL`;
         document.getElementById('right-char').src = 'img/char1.jpg';
+        document.getElementById('scene').src = `img/murder-spot.png`;
+
 
 
     }
@@ -518,6 +530,11 @@ document.getElementById('scene-script').style.display = 'none';
             to litter around.`;
             content.style.display = 'block';
         } else {
+
+            if(count == 6){
+                document.getElementById('scene').src = `img/security-card.jpg`;
+               
+            }
             // content.style.visibility = 'hidden';
 
             content.style.display = 'none';

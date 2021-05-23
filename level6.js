@@ -8,8 +8,8 @@ var conv1=[
 // pop up as per his instincts.
 
    // Cecil
-    "WHAT’S UP? BIEN.",
-    "ESTOY",
+    "WHAT’S UP?",
+    "ESTOY, BIEN.",
     "ARE YOU WORRIED ABOUT ME?",
     "HELL YEAH. HOW CAN I PRETEND TO BE HAPPY WHEN ONE OF US IS IN DANGER. I WANT YOU TO BE SAFE.",
     "YEAH, THE FEELING'S MUTUAL",
@@ -74,9 +74,9 @@ var conv4 = [
     "WHAT TRADE?",
     "ALL I NEED IS YOUR LIFE... I WILL GIVE YOU PEACE IN YOUR LIFE IN HELL…",
     "YOU’RE CRAZY.",
-    "YOU BROKE THE CODE... JAKE,MAX,HARRY,STEVE AND JACKSON. NOW IT’S YOUR TURN. I’M SO DISAPPOINTED THAT YOU BROKE THE CODE. IT WAS NOT MEANT TO BE BROKEN",
+    "YOU BROKE THE CODE... JAKE,MAX,HARRY,STEVE AND JONATHAN. NOW IT’S YOUR TURN. I’M SO DISAPPOINTED THAT YOU BROKE THE CODE. IT WAS NOT MEANT TO BE BROKEN",
     ""
-   // ”JAKE...MAX...HARRY...STEVE...JACKSON...” THE VOICES RETURN. CECIL FALLS TO THE FLOOR SCREAMING WITH HIS HANDS ON HIS HEAD. HE FEELS A SUDDEN RUSH OF ADRENALINE.
+   // ”JAKE...MAX...HARRY...STEVE...JONATHAN...” THE VOICES RETURN. CECIL FALLS TO THE FLOOR SCREAMING WITH HIS HANDS ON HIS HEAD. HE FEELS A SUDDEN RUSH OF ADRENALINE.
 
 ];
 
@@ -132,12 +132,11 @@ var conv7 =[
 
     // CECIL
     "SHOW TIME IS OVER BOY.",
-    "CECIL I KNOW YOU’RE IN THERE. DON’T ALLOW ARYAN TO TAKE CONTROL",
-    "OVER YOU. IT’S MY FAULT. I ACCEPT IT. I SHOULD'VE TAKEN YOU TO SPAIN.",
-    "BUT YOU’RE NOT ALONE NOW. I WILL BE WITH YOU, WE WILL SOLVE ALL",
-    "THE CRIMES TOGETHER... ACTUALLY YOU KNOW... THESE GUYS ARE",
-    "SCARED OF US! NOT ME. TOGETHER WE CAN MAKE IT. YOU ARE NOT",
-    "ALONE AMIGO.",
+    "CECIL I KNOW YOU’RE IN THERE. DON’T ALLOW ARYAN TO TAKE CONTROL OVER YOU. IT’S MY FAULT. I ACCEPT IT. I SHOULD'VE TAKEN YOU TO SPAIN.",
+    " ",
+    "BUT YOU’RE NOT ALONE NOW. I WILL BE WITH YOU, WE WILL SOLVE ALL THE CRIMES TOGETHER... ACTUALLY YOU KNOW... ",
+    " ",
+    "THESE GUYS ARE SCARED OF US! NOT ME. TOGETHER WE CAN MAKE IT. YOU ARE NOT ALONE AMIGO.",
     " "
 
 ]
@@ -147,10 +146,12 @@ var conv8=[
 
 
         // ERNEST (CONT'D)
+        "",
         "YOU HAVE THE LIGHT INSIDE YOU. THINK... YOU SAVED ONE PERSON’S LIFE YESTERDAY. IT'S A GREAT THING.",
         "ERNEST...!",
-        "HEY...HEY... YOU’RE NOT SUPPOSED TO TALK TO HIM. CECIL... YOU CAN’T",
-        "JUST KILL ME…",
+        " ",
+        "HEY...HEY... YOU’RE NOT SUPPOSED TO TALK TO HIM. CECIL... YOU CAN’T JUST KILL ME…",
+
         "YES... YOU CAN CECIL…",
         "HRAAAH!!.. "
         //  WITH A QUICK TURN OF EVENTS ERNEST DISRUPTS CECIL USING A SHOCK GUN LEAVING CECIL ON THE GROUND WITH A SCREAM. HE THEN
@@ -166,11 +167,11 @@ var conv9=[
 
     // CECIL(CONT'D)
     "NO...NO... DON’T DO THIS TO ME...",
-    "ARYAN... YOU WERE WRONG... I LEARNED YOUR WEAKNESS. YOU HATE",
-    "LIGHT. I WILL END YOUR DARKNESS.",
+    "ARYAN... YOU WERE WRONG... I LEARNED YOUR WEAKNESS. YOU HATE LIGHT. I WILL END YOUR DARKNESS.",
     "NOO... DON’T DO THIS, IT’S A SIN.",
+    "",
+    "",
     "LUCIFER DECIDES WHAT IS SIN. DON’T YOU WORRY ABOUT IT.",
-    ""
 
 ];  
 
@@ -249,7 +250,7 @@ var updateScreen=()=>{
 
     if(convNo == 96 ){
         scene.style.display="block"
-        updateScene("END")
+        updateScene("Earnest and Cecil walk away. The court orders to move Cecil to the psychiatric ward for three months. After that Cecil recovers a lot. Earnest and Cecil wait for another reunion.<br><br> END ")
     }
 
 
@@ -308,7 +309,7 @@ var updateScreen=()=>{
     }else if(convNo <  setLength[4]){
 
 
-        updateScene("”JAKE...MAX...HARRY...STEVE...JACKSON...” THE VOICES RETURN. CECIL FALLS TO THE FLOOR SCREAMING WITH HIS HANDS ON HIS HEAD. HE FEELS A SUDDEN RUSH OF ADRENALINE.");
+        updateScene("”JAKE...MAX...HARRY...STEVE...JONATHAN...” THE VOICES RETURN. CECIL FALLS TO THE FLOOR SCREAMING WITH HIS HANDS ON HIS HEAD. HE FEELS A SUDDEN RUSH OF ADRENALINE.");
         updateDialog(conv5[convNo-setLength[3]],conv5[convNo-setLength[3]+1])
 
         updateSceneImg("img/wharehouse_inside.jpg");
@@ -331,7 +332,7 @@ var updateScreen=()=>{
     }else if(convNo < setLength[6]){
         updateScene("Aryan charges towards Ernest aggressively. Ernest tries to avoid and defend his attack but Cecil hits him hard. He falls down and the mask falls out of his hands. Cecil takes the mask and wears it. Ernest slowly gets back on his feet.");
         
-        updateDialog(conv7[convNo-setLength[5]],conv7[convNo-setLength[5]+1])
+        updateDialog(conv7[convNo-setLength[5]+1],conv7[convNo-setLength[5]])
 
         updateChar("ERNEST","CECIL");
         updateSceneImg("img/wharehouse_inside.jpg");
@@ -340,7 +341,7 @@ var updateScreen=()=>{
 
 
     }else if(convNo < setLength[7]){
-        updateScene("”JAKE...MAX...HARRY...STEVE...JACKSON...” THE VOICES RETURN. CECIL FALLS TO THE FLOOR SCREAMING WITH HIS HANDS ON HIS HEAD. HE FEELS A SUDDEN RUSH OF ADRENALINE.");
+        updateScene("”JAKE...MAX...HARRY...STEVE...JONATHAN...” THE VOICES RETURN. CECIL FALLS TO THE FLOOR SCREAMING WITH HIS HANDS ON HIS HEAD. HE FEELS A SUDDEN RUSH OF ADRENALINE.");
         
         updateDialog(conv8[convNo-setLength[6]],conv8[convNo-setLength[6]+1])
 
@@ -353,7 +354,7 @@ var updateScreen=()=>{
     }else if(convNo < setLength[8]){
         updateScene("WITH A QUICK TURN OF EVENTS ERNEST DISRUPTS CECIL USING A SHOCK GUN LEAVING CECIL ON THE GROUND WITH A SCREAM. HE THEN DRAGS CECIL TO THE MIDDLE OF THE HALL ILLUMINATED WITH LIGHT AND PULLS OFF THE PIECE OF DISGUISE THAT COVERED HIS FACE.");
    
-        updateDialog(conv9[convNo-setLength[7]],conv9[convNo-setLength[7]+1])
+        updateDialog(conv9[convNo-setLength[7]+1],conv9[convNo-setLength[7]])
 
         updateChar("ERNEST","CECIL");
         updateSceneImg("img/wharehouse_inside.jpg");
@@ -363,7 +364,7 @@ var updateScreen=()=>{
 
     
     }else if(convNo < setLength[9]){
-        updateScene("”JAKE...MAX...HARRY...STEVE...JACKSON...” THE VOICES RETURN. CECIL FALLS TO THE FLOOR SCREAMING WITH HIS HANDS ON HIS HEAD. HE FEELS A SUDDEN RUSH OF ADRENALINE.");
+        updateScene("”JAKE...MAX...HARRY...STEVE...JONATHAN...” THE VOICES RETURN. CECIL FALLS TO THE FLOOR SCREAMING WITH HIS HANDS ON HIS HEAD. HE FEELS A SUDDEN RUSH OF ADRENALINE.");
         updateDialog(conv10[convNo-setLength[8]],conv10[convNo-setLength[8]+1])
 
         updateChar("ERNEST","CECIL");
@@ -427,3 +428,12 @@ var bwd =()=>{
 
 updateScreen();
 
+var nav = document.getElementById("outer-nav");
+nav.addEventListener("mouseenter", function () {
+  var expand = document.getElementById("nav");
+  expand.style.animation = "navfull 2s forwards";
+});
+nav.addEventListener("mouseleave", function () {
+  var expand = document.getElementById("nav");
+  expand.style.animation = "navsmall 2s forwards";
+});
