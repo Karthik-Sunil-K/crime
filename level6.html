@@ -10,14 +10,13 @@
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css">
-<title>Crime Scene</title>
+<title>Crime Scene L6</title>
 </head>
 <body>
 
   
 <body>
-
-    <nav class="navbar navbar-expand-sm navbar-dark py-3">
+        <nav class="navbar navbar-expand-sm navbar-dark py-3" >
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
             aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"><i
                 class="fas fa-bars    "></i></button>
@@ -28,37 +27,27 @@
                             class="sr-only">(current)</span></a>
                 </li>
 
-                <!-- <li class="nav-item active">
-                    <a class="nav-link" href="http://athena21.live/login">Questions <span
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Questions <span
                             class="sr-only">(current)</span></a>
-                </li> -->
+                </li>
 
-                <li class="nav-item ">
-                    <a class="nav-link  active" href="#nav" role="button">
+                <li class="nav-item dropdown">
+                    <a class="nav-link active" href="#nav">
                       Levels
                     </a>
-                    
-                  </li>
-
-                  <li class="nav-item ">
-                    <a class="nav-link  active" href="credits.html" role="button">
-                      Credits
-                    </a>
-                    
+                   
                   </li>
             </ul>
 
         </div>
     </nav>
-
-
   
   <div class="container-fluid">
 
-    
     <div class="row mx-auto">
       <div class="col-10 mt-3 mx-auto">
-        <h4 class = 'text-capitalize mx-auto text-center' id = 'heading'>unravel the mystery</h4>
+        <h4 class = 'text-capitalize mx-auto text-center' id = 'heading'><span id = 'count'></span>unravel the mystery</h4>
       </div>
     </div>
     <div class="row story-container mt-5">
@@ -69,7 +58,9 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
 
+                <!--left dialogue box -->
                 <p id="left-dialogue" class = 'text-capitalize'>
+                  Hellos
 
                 </p>
               </div>
@@ -85,23 +76,23 @@
         <img src="img/char2.jpg" alt="" class="card-img-top  img-fluid character-pic mx-auto" id="left-char">
 
           <div class="card-body">
-            <h4 class="card-title text-center">ERNEST</h4>
+            <!--left man name -->
+            <h4 id="leftman" class="card-title text-center">ERNST</h4>
           </div>
         </div>
       </div>
 
 
       <div class="col-lg-6 my-auto scene" id = 'scene-outer'>
-        <div id="hoverChange">
-          <img src="img/asylum.jpg" alt="" class="img-fluid" id="scene">
-        <div id="scene-script" class = 'text-transform mx-auto'>Murder of two patients in the Lake Tower Asylum. Assumed that
-          the patients might have struck each other in the head. No other
-          involvement is reported yet.</div>
-        </div>
+        <img id="sceneImg" src="img/asylum.jpg" alt="" class="img-fluid" >
+        
+       
+        <div id="scene-script" class = 'text-transform mx-auto'>hello this is nyc</div>
+
         <div class="row mx-auto">
           <div class="col-12 mx-auto mt-4 pt-2 text-center">
               <button class='btn' id = 'prev' onclick="bwd()"><i class="fa fa-arrow-left" aria-hidden="true"></i> Prev</button>
-              <button class='btn' id = 'next' onclick="fwd()">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+              <button class='btn' onclick="fwd()">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
         
         
           </div>
@@ -117,9 +108,11 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
 
+                <!--right  dialoge-->
                 <p id="right-dialogue">
-
+                    hello
                 </p>
+
               </div>
             </div>
             <div class="swiper-scrollbar"></div>
@@ -131,7 +124,8 @@
         <img src="img/char1.jpg" alt="" class="card-img-top  img-fluid character-pic mx-auto" id="right-char">
 
           <div class="card-body">
-            <h4 class="card-title text-center" id = 'char-2-name'>CECIL</h4>
+            
+            <h4 class="card-title text-center" id = 'rightman'>CECIL</h4>
           </div>
         </div>
       </div>
@@ -161,6 +155,7 @@
   </div>
   
  
+<script src="./level6.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
@@ -177,7 +172,6 @@
       mousewheel: true,
     });
   </script>
-  <script src="./level1.js"></script>
 
 
 
