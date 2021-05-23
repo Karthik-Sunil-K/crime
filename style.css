@@ -1,13 +1,18 @@
-body{
+:root{
+    --mainClr: #161b21;
+    --subClr: #f4a950;
+}
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
    position:relative;
-    background: #060606;
+    background: var(--mainClr);
 }
 
 html, body{
     scroll-behavior: smooth;
+    background-color: var(--mainClr);
 }
 
 .container-fluid{
@@ -17,11 +22,11 @@ html, body{
 }
 
 .fas.fa{
-    color:orange;
+    color:var(--subClr);
 }
 
 .navbar-nav .nav-item .nav-link{
-    color:orange;
+    color:var(--subClr);
     padding-left: 20px;
     padding-right:20px;
     font-weight:600;
@@ -30,7 +35,7 @@ html, body{
 .navbar-nav .nav-item .nav-link:hover{
 
 
-    background-color: orange;
+    background-color: var(--subClr);
     border-radius:10px;
     color:#121212;
 }
@@ -53,20 +58,20 @@ html, body{
     width:102px;
 }
 #heading{
-    color:orange;
+    color:var(--subClr);
 }
 
 
 .character-pic{
     height:200px;
     width:167px;
-    border:2px solid orange;
+    border:2px solid var(--subClr);
 }
 
 .scene img{
     height: 100%;
     width: 100%;
-    border:2px solid orange;
+    border:2px solid var(--subClr);
     display:block;
 }
 
@@ -75,10 +80,10 @@ html, body{
     top:50%;
     left:50%;
     transform:translate(-50%, -50%);
-    color:orange;
+    color:var(--subClr);
     background-color:#121212;
     padding:10px;
-    border:2px solid orange;
+    border:2px solid var(--subClr);
     opacity:0.9;
     border-radius:10px;
     font-weight:700;
@@ -88,8 +93,8 @@ html, body{
 }
 .scene .btn{
    background-color:#121212;
-   border:2px solid orange;
-   color:orange;
+   border:2px solid var(--subClr);
+   color:var(--subClr);
    margin-right:10px;
 }
 
@@ -98,13 +103,13 @@ html, body{
     border-radius: 5px;
     background: #121212;
     color:#fff;
-    border:2px solid orange;
+    border:2px solid var(--subClr);
     height:150px;
 }
 
 .card{
-    background-color:#060606;
-    color:orange;
+    background-color:var(--mainClr);
+    color:var(--subClr);
     
 }
 .swiper-container {
@@ -125,9 +130,9 @@ html, body{
   }
 #nav .btn{
     text-decoration:none;
-    color:orange;
+    color:var(--subClr);
     background-color: #121212;
-    border:2px solid orange;
+    border:2px solid var(--subClr);
     
 }
 
